@@ -1,0 +1,86 @@
+@font-face {
+    font-family: 'Avenir';
+    src: url(../font-family/Avenir-Font/avenir_ff/AvenirLTStd-Book.otf);
+  }
+  *{
+      font-family: 'Avenir';
+  }
+  .casino {
+    display: inline;
+    list-style: none;
+    
+  }
+  .sidenav{
+    background: #001234;
+    color: #828993;
+    font-family: 'Avenir';
+    font-weight: 400;
+  }
+  .casino a:hover,
+li.active{
+    color: #f5f6f7 !important;
+    background: rgba(0, 17, 168, 0.7);
+    border-radius: 30px;
+    font-weight: 700;
+    list-style: none;
+    text-decoration: none;
+  }
+  .casino a{
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #fff;
+  }
+  .Lottery a{
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 16px;
+    line-height: 22px;
+    text-align: center;
+    color: #A7A7A7 !important;
+  }
+  .Lottery .fire{
+    position: absolute;
+    left: 17%;
+    top: 5%;
+  }
+  /************navtabs*********/
+  .nav-pills  .nav-link.active, .nav-pills .show>.nav-link {
+    background: linear-gradient(273.04deg, #001185 70.77%, rgba(0, 255, 255, 0.35) 97.43%);
+    border-radius: 0px 30px 30px 0px;
+    left: -15%;
+    position: relative;
+    color: #fff !important;
+  }
+  .nav-tabs .nav-link{
+    left: -15%;
+    position: relative;
+  }
+  .nav-pills span{
+    font-family: 'Avenir';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 18px;
+    
+    color: #828993;
+  }
+  .nav-tabs{
+      border-bottom: none !important;
+  }
+  .promotion{
+      color: #80D847 !important;
+  }
+  .promotion_items{
+    width: 70px;
+    height: 65px;
+    left: 25px;
+    background: rgba(63, 63, 63, 0.66);
+border-radius: 25px;
+    padding: 7px;
+
+  }
+/*************end of navtabs***************/
