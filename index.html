@@ -37,14 +37,29 @@
 
             </div>
             <!----end of sidenavbar----->
-            <div class="col-md-10">
-                <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
-                      <span class="navbar-toggler-icon"></span>
+            <div class="col-md-10 px-0">
+
+                <nav class="navbar navbar-expand-md navbar-light nav-bg">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText">
+                        <span class="navbar-toggler-icon"></span>
                     </button>
-                    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
-                      <a class="navbar-brand" href="#">Hidden brand</a>
-                      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <!--<div class="collapse navbar-collapse" id="navbarTogglerDemo01">-->
+                    <a class="navbar-brand d-md-inline d-none" href="#"><img src="assets/images/logo.svg"
+                            class="img-fluis" alt=""></a>
+                    <div class="row my-2 my-lg-0 serach_item ">
+                        <button class=" my-2 my-sm-0 col-lg-1 col text-lg-left text-center" type="submit">
+                            <img src="assets/images/Search.svg" class="img-fluid" alt="">
+                        </button>
+                        <input class="form-control text-left col-10 my-2 d-lg-block d-none" type="search"
+                            placeholder="Search your favourite games" aria-label="Search">
+
+                    </div>
+
+                    <div><button class="login_btn">Login</button></div>
+                    <div><button class="sign_btn login_btn px-3 py-2">Sign Up</button></div>
+                    <div><button class="depost_btn login_btn px-3 py-2">Depost</button></div>
+
+                    <!-- <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item active">
                           <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                         </li>
@@ -54,13 +69,10 @@
                         <li class="nav-item">
                           <a class="nav-link disabled" href="#">Disabled</a>
                         </li>
-                      </ul>
-                      <form class="form-inline my-2 my-lg-0">
-                        <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
-                        <button class="btn btn-outline-success my-2 my-sm-0" type="submit">Search</button>
-                      </form>
-                    </div>
-                  </nav>
+                      </ul> -->
+
+
+                </nav>
             </div>
         </div>
 
@@ -68,147 +80,222 @@
         <!------main sidebar-->
 
         <div class="row">
-
-            <!--Grid column-->
-            <div class="col-md-2 mb-4 vh-100 sidenav pt-4">
-
-                <ul class="nav nav-tabs" id="myTab" role="tablist">
-                    <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
-                        <li class="nav-item">
-                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                                aria-controls="home" aria-selected="true">
-                                <div class="row py-1 px-3">
-                                    <img src="assets/images/home-png 1.svg" class="img-fluid px-2" alt="">
-                                    <span class="pt-1">Home</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                                aria-controls="profile" aria-selected="false">
-                                <div class="d-flex py-1 ">
-                                    <img src="assets/images/setbet.svg" class="img-fluid px-1" alt="">
-                                    <span class="pt-1">stackBet Classics</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
-                                aria-controls="contact" aria-selected="false">
-                                <div class="row py-1 px-3">
-                                    <img src="assets/images/slot.svg" class="img-fluid px-1" alt="">
-                                    <span class="pt-1">Slots</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
-                                aria-controls="contact" aria-selected="false">
-                                <div class="d-flex py-1 pl-1">
-                                    <img src="assets/images/wheel.svg" class="img-fluid " alt="">
-                                    <span class="pt-1">Wheel of Fortune</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
-                                aria-controls="contact" aria-selected="false">
-                                <div class="row py-1 px-3">
-                                    <img src="assets/images/promotion.svg" class="img-fluid px-2" alt="">
-                                    <span class="pt-1 promotion">Promotions</span>
-                                </div>
-                            </a>
+            <div class="col-md-2 mb-4  sidenav pt-4">
+                <div class="collapse navbar-collapse main-sidebar" id="navbarText">
+                    <!--Grid column-->
 
 
-                            <div class="row">
+                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                        <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
+                            <li class="nav-item">
+                                <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                    aria-controls="home" aria-selected="true">
+                                    <div class="row py-1 px-3">
+                                        <img src="assets/images/home-png 1.svg" class="img-fluid px-2" alt="">
+                                        <span class="pt-1 d-lg-inline d-md-none">Home</span>
+                                    </div>
+                                </a>
+                            </li>
 
-                                <div class="promotion_items col-3 m-1">
-                                    <img src="assets/images/seven.svg" class="img-fluid" alt="">
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                    aria-controls="profile" aria-selected="false">
+                                    <div class="d-flex py-1 ">
+                                        <img src="assets/images/setbet.svg" class="img-fluid px-1" alt="">
+                                        <span class="pt-1 d-lg-inline d-md-none">stackBet Classics</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                    aria-controls="contact" aria-selected="false">
+                                    <div class="row py-1 px-3">
+                                        <img src="assets/images/slot.svg" class="img-fluid px-1" alt="">
+                                        <span class="pt-1 d-lg-inline d-md-none">Slots</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                    aria-controls="contact" aria-selected="false">
+                                    <div class="d-flex py-1 pl-1">
+                                        <img src="assets/images/wheel.svg" class="img-fluid " alt="">
+                                        <span class="pt-1 d-lg-inline d-md-none">Wheel of Fortune</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                    aria-controls="contact" aria-selected="false">
+                                    <div class="row py-1 px-3">
+                                        <img src="assets/images/promotion.svg" class="img-fluid px-2" alt="">
+                                        <span class="pt-1 promotion d-lg-inline d-md-none">Promotions</span>
+                                    </div>
+                                </a>
+
+
+                                <div class="row">
+
+                                    <div class="promotion_items col-3 m-1">
+                                        <img src="assets/images/seven.svg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="promotion_items col-3 m-1 d-lg-inline d-md-none">
+                                        <img src="assets/images/luddo.svg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="promotion_items col-3 m-1 d-lg-inline d-md-none">
+                                        <img src="assets/images/gift.svg" class="img-fluid" alt="">
+                                    </div>
                                 </div>
-                                <div class="promotion_items col-3 m-1">
-                                    <img src="assets/images/luddo.svg" class="img-fluid" alt="">
+                                <div class="row d-lg-flex d-md-none">
+                                    <div class="promotion_items col-3 m-1">
+                                        <img src="assets/images/spin.svg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="promotion_items col-3 m-1 pb-3">
+                                        <img src="assets/images/pot.svg" class="img-fluid" alt="">
+                                    </div>
+                                    <div class="promotion_items col-3 m-1 pt-2">
+                                        <img src="assets/images/box.svg" class="img-fluid" alt="">
+                                    </div>
+
                                 </div>
-                                <div class="promotion_items col-3 m-1">
-                                    <img src="assets/images/gift.svg" class="img-fluid" alt="">
-                                </div>
+
+                            </li>
+                            <hr>
+
+                            <li class="nav-item">
+                                <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                                    aria-controls="profile" aria-selected="false">
+                                    <div class="d-flex py-1 px-3">
+                                        <img src="assets/images/lottery.svg" class="img-fluid px-2" alt="">
+                                        <span class="pt-1 d-lg-inline d-md-none">Lottery</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                    aria-controls="contact" aria-selected="false">
+                                    <div class="row py-1 px-3">
+                                        <img src="assets/images/raffel.svg" class="img-fluid px-2" alt="">
+                                        <span class="pt-1 d-lg-inline d-md-none">Raffel</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                    aria-controls="contact" aria-selected="false">
+                                    <div class="d-flex py-1 px-2">
+                                        <img src="assets/images/affiliate.svg" class="img-fluid px-2" alt="">
+                                        <span class="pt-1 d-lg-inline d-md-none">Affiliate</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                    aria-controls="contact" aria-selected="false">
+                                    <div class="d-flex py-1 pl-1">
+                                        <img src="assets/images/diamond.svg" class="img-fluid px-2" alt="">
+                                        <span class="pt-1 d-lg-inline d-md-none">Platinum club</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                                    aria-controls="contact" aria-selected="false">
+                                    <div class="d-flex py-1 pl-1">
+                                        <img src="assets/images/terms.svg" class="img-fluid px-2" alt="">
+                                        <span class="pt-1 d-lg-inline d-md-none">Terms</span>
+                                    </div>
+                                </a>
+                            </li>
+                            <hr>
+                        </ul>
+                        <div class="mx-2 d-lg-inline d-md-none">
+                            <div>
+                                <label for="">Language</label>
                             </div>
-                            <div class="row">
-                                <div class="promotion_items col-3 m-1">
-                                    <img src="assets/images/spin.svg" class="img-fluid" alt="">
-                                </div>
-                                <div class="promotion_items col-3 m-1 pb-3">
-                                    <img src="assets/images/pot.svg" class="img-fluid" alt="">
-                                </div>
-                                <div class="promotion_items col-3 m-1 pt-2">
-                                    <img src="assets/images/box.svg" class="img-fluid" alt="">
-                                </div>
-
+                            
+                            <select class="selectpicker show-tick  px-5 py-3" id="language">
+                                <option data-image="assets/images/language.svg">English</option>
+                                <option>Hindi</option>
+                                <option>Urdu</option>
+                            </select>
+                        </div>
+                        <br>
+                        <div class="my-2 d-lg-inline d-md-none">
+                            <div>
+                                <label for="">Currency</label>
                             </div>
+                            <select class="selectpicker show-tick px-5 py-3" data-style="btn-danger">
+                                <option style="background-image:url(assets/images/language.svg);">Bitcoin</option>
+                                <option><img src="assets/images/language.svg">Rupee</option>
+                                <option><img src="assets/images/language.svg">Dollar</option>
+                            </select>
+                        </div>
+                        <div class="my-2 d-lg-inline d-md-none">
+                            <div>
+                                <label for="">Live Support</label>
+                            </div>
+                            <select class="selectpicker show-tick  px-5 py-3 live-support" data-style="btn-danger">
+                                <option>Mustard</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+                        </div>
+                        <div class="my-2 d-lg-inline d-md-none">
+                            <div>
+                                <label for="">Refer</label>
+                            </div>
+                            <select class="selectpicker show-tick  px-5 py-3 refer" data-style="btn-danger">
+                                <option>Refer</option>
+                                <option>Ketchup</option>
+                                <option>Relish</option>
+                            </select>
+                        </div>
 
-                        </li>
-                        <hr>
-                        
-                        <li class="nav-item">
-                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                                aria-controls="profile" aria-selected="false">
-                                <div class="d-flex py-1 px-3">
-                                    <img src="assets/images/lottery.svg" class="img-fluid px-2" alt="">
-                                    <span class="pt-1">Lottery</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
-                                aria-controls="contact" aria-selected="false">
-                                <div class="row py-1 px-3">
-                                    <img src="assets/images/raffel.svg" class="img-fluid px-2" alt="">
-                                    <span class="pt-1">Raffel</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
-                                aria-controls="contact" aria-selected="false">
-                                <div class="d-flex py-1 px-2">
-                                    <img src="assets/images/affiliate.svg" class="img-fluid px-2" alt="">
-                                    <span class="pt-1">Affiliate</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
-                                aria-controls="contact" aria-selected="false">
-                                <div class="d-flex py-1 pl-1">
-                                    <img src="assets/images/diamond.svg" class="img-fluid px-2" alt="">
-                                    <span class="pt-1">Platinum club</span>
-                                </div>
-                            </a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
-                                aria-controls="contact" aria-selected="false">
-                                <div class="d-flex py-1 pl-1">
-                                    <img src="assets/images/terms.svg" class="img-fluid px-2" alt="">
-                                    <span class="pt-1">Terms</span>
-                                </div>
-                            </a>
-                        </li>
-                       <hr>
-                    </ul>
-
+                </div>
             </div>
-            <!--Grid column-->
 
-            <!--Grid column-->
-            <div class="col-md-9 mb-4">
+
+            <div class="col-md-10 mb-4" id="power-stack">
 
                 <!-- Tab panels -->
                 <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
-                        <h2>Home</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eveniet earum. Sed
-                            accusantium eligendi molestiae quo hic velit nobis et, tempora placeat ratione rem
-                            blanditiis voluptates vel ipsam? Facilis, earum!</p>
+                    <div class="tab-pane fade show active my-4" id="home" role="tabpanel" aria-labelledby="home-tab">
+                        <div class="enter-now">
+                            <div class="row">
+                                <div class="col-md-6 py-2">
+                                    <h1>powerStack</h1>
+                                </div>
+                                <div class="col-md-6 pt-4">
+                                    <h2>£1m Lottery Draw</h2>
+                                    <div class="text-center">
+                                        <a href="/"><button class="py-2 px-4">ENTER NOW</button></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                       
+                        <div class="row my-4 mx-2">
+                            <div class="col-md-6  py-2">
+                                <div class="col-12 play-now">
+                                    <h3 class="pt-4 px-3">GRAB YOUR <br><span>WELCOME BONUS</span> <br>JOIN NOW & <span>START</span> <br>WINNING!</h3>
+                                    <div class="pb-3">
+                                    <button class="px-3 py-2">Let’s Play Now</button>
+                                </div>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="buy-ticket">
+
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="play">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                   
                     </div>
                     <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
                         <h2>Profile</h2>
@@ -231,16 +318,17 @@
 
         </div>
     </div>
+
     <!------end main sidebar-->
     <!---------------end of main header ----------------------->
 
 </body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.min.js"></script>
 <script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
-<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js"></script>
+
 
 </html>

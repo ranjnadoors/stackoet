@@ -79,8 +79,230 @@ li.active{
     height: 65px;
     left: 25px;
     background: rgba(63, 63, 63, 0.66);
-border-radius: 25px;
+   border-radius: 25px;
     padding: 7px;
 
   }
+  .promotion_items img{
+    width: 3rem;
+    height: 3rem;
+  }
 /*************end of navtabs***************/
+
+/****************navbar****************/
+
+.nav-bg{
+  background: #01369B;
+}
+.serach_item{
+ /* position: absolute;
+  width: 626px;*/
+  height: 51px;
+  left: 335px;
+  top: 12px;
+  background: rgba(0, 11, 66, 0.65);
+  border-radius: 30px;
+}
+.serach_item input{
+  background-color: transparent !important;
+  color: #fff;
+  border: none;
+}
+.form-control{
+  color: #fff !important;
+}
+.serach_item button{
+  border: none;
+  background-color: transparent;
+}
+
+.login_btn{
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 16px;
+  line-height: 22px;
+  text-align: center;
+  color: #FFFFFF;
+  background-color: transparent;
+  border: none;
+}
+.sign_btn{
+  background: linear-gradient(94.57deg, #FF7A00 7.42%, #FFA800 96.37%);
+  border-radius: 30px;
+  border: none;
+}
+.depost_btn{
+  background: linear-gradient(93.19deg, #1AB900 5.18%, #21EB00 97.11%);
+  border-radius: 30px;
+  border: none;
+}
+.navbar-expand-md {
+  -ms-flex-flow: row nowrap;
+  flex-flow: row nowrap;
+  -ms-flex-pack: start;
+  justify-content: space-between;
+}
+.selectpicker{
+  background: rgba(0, 17, 168, 0.7);
+border-radius: 30px;
+border: transparent;
+font-family: 'Avenir';
+font-style: normal;
+font-weight: 900;
+font-size: 18px;
+line-height: 25px;
+text-align: center;
+color: #FFFFFF;
+border: 0;
+  
+  border-right: 16px solid transparent;
+}
+.live-support{
+  background: rgba(19, 234, 0, 0.7);
+  border-radius: 30px;
+}
+.refer{
+  background: rgba(238, 171, 0, 0.9);
+  border-radius: 30px;
+}
+/******************end of navbar**********/
+/********************Dashboard***************/
+#power-stack{
+  background: rgba(0, 17, 168, 0.7);
+}
+.enter-now{
+  background-image: url(../images/power_stack.svg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 20px;
+  position: relative;
+}
+#power-stack h1{
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 58.7907px;
+  line-height: 80px;
+  text-align: center;
+  color: #FFFFFF;
+}
+#power-stack h2{
+  font-family: 'Avenir';
+font-style: normal;
+font-weight: 900;
+font-size: 39.1938px;
+line-height: 54px;
+text-align: center;
+color: #FFFFFF;
+}
+.enter-now button{
+  background: #24FF00;
+border-radius: 12.2481px;
+font-family: 'Avenir';
+font-style: normal;
+font-weight: 900;
+font-size: 15.5969px;
+
+text-align: center;
+border: none;
+color: #333333;
+}
+.play-now{
+  background-image: url(../images/play-now.svg);
+ 
+  border-radius: 20px;
+  position: relative;
+ 
+  background-repeat: no-repeat
+}
+h3{
+  font-family: 'Avenir';
+font-style: normal;
+font-weight: 700;
+font-size: 25px;
+line-height: 38px;
+color: #FFFFFF;
+text-shadow: 7px 7px 7px rgba(0, 0, 0, 0.25);
+}
+span{
+  color: #80D847;
+}
+.play-now button{
+  background: linear-gradient(94.57deg, #FF7A00 7.42%, #FFA800 96.37%);
+border-radius: 30px;
+font-family: 'Avenir';
+font-style: normal;
+font-weight: 900;
+font-size: 16px;
+line-height: 22px;
+text-align: center;
+border: none;
+color: #FFFFFF;
+}
+.buy-ticket{
+  
+    background-image: url(../images/buy-ticket.png);
+    background-size: contain;
+    border-radius: 20px;
+    position: relative;
+    height: 79vh;
+    background-repeat: no-repeat;
+  }
+  .play{
+    background-image: url(../images/play.png);
+    background-size: contain;
+    border-radius: 20px;
+    position: relative;
+    height: 79vh;
+    background-repeat: no-repeat
+  }
+
+/****************media query**********/
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+  .serach_item{
+    width: 9%;
+  }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+  .serach_item{
+    width: 9%;
+  }
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {.serach_item{
+  width: 9%;
+}
+.main-sidebar{
+  display: block !important;
+}
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+  .serach_item{
+    width: 50%;
+  }
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+  .serach_item{
+    width: 50%;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
