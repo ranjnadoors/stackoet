@@ -100,6 +100,10 @@ li.active{
     width: 3rem;
     height: 3rem;
   }
+  .promotion_items span{
+    width: 3rem;
+    height: 3rem;
+  }
 /*************end of navtabs***************/
 #myTab_1{
   background: #00175B !important;
@@ -119,6 +123,22 @@ padding: 5px;
 #myTab_1  a{
   color: #818892 !important;
 }
+#claasic-bg{
+  background: #00175B;
+border-radius: 20px 20px 20px 20px;
+}
+#claasic-bg img{
+border-radius: 20px;
+}
+#claasic-bg span{
+  font-family: 'Avenir';
+font-style: normal;
+font-weight: 900;
+font-size: 14px;
+line-height: 19px;
+
+color: #969696;
+  }
 /****************navbar****************/
 
 .nav-bg{
