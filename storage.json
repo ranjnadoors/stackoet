@@ -38,8 +38,7 @@
                             "items": [
                                 {
                                     "id": "workbench.action.reopenClosedEditor",
-                                    "label": "&&Reopen Closed Editor",
-                                    "enabled": false
+                                    "label": "&&Reopen Closed Editor"
                                 },
                                 {
                                     "id": "vscode.menubar.separator"
@@ -390,8 +389,7 @@
                                 },
                                 {
                                     "id": "workbench.action.toggleSidebarVisibility",
-                                    "label": "Show &&Side Bar",
-                                    "checked": true
+                                    "label": "Show &&Side Bar"
                                 },
                                 {
                                     "id": "workbench.action.toggleStatusbarVisibility",
@@ -1538,7 +1536,7 @@
             "editorPartMinWidth": 220,
             "titleBarHeight": 0,
             "activityBarWidth": 48,
-            "sideBarWidth": 300,
+            "sideBarWidth": 0,
             "statusBarHeight": 22,
             "windowBorder": false
         }
@@ -1549,10 +1547,10 @@
             "backupPath": "/var/www/html/officework/Stackoet/Backups/cb07378211da55dae3f3f3a1a02c3ad1",
             "uiState": {
                 "mode": 0,
-                "x": 288,
-                "y": 103,
-                "width": 1024,
-                "height": 768
+                "x": 72,
+                "y": 64,
+                "width": 1528,
+                "height": 836
             }
         },
         "openedWindows": []

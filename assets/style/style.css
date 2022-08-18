@@ -1,3 +1,5 @@
+@import "https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css";
+
 @font-face {
     font-family: 'Avenir';
     src: url(../font-family/Avenir-Font/avenir_ff/AvenirLTStd-Book.otf);
@@ -49,18 +51,29 @@ li.active{
     top: 5%;
   }
   /************navtabs*********/
-  .nav-pills  .nav-link.active, .nav-pills .show>.nav-link {
+  #navbarText .nav-tabs  .nav-link.active, .nav-tabs .show>.nav-link {
     background: linear-gradient(273.04deg, #001185 70.77%, rgba(0, 255, 255, 0.35) 97.43%);
     border-radius: 0px 30px 30px 0px;
     left: -15%;
     position: relative;
     color: #fff !important;
+    border: none;
   }
-  .nav-tabs .nav-link{
+  #navbarText .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+    
+  color: #fff;
+  }
+  #navbarText .nav-tabs .nav-link{
     left: -15%;
     position: relative;
   }
-  .nav-pills span{
+  #navbarText .nav-tabs .nav-link:hover{
+    border: none;
+    left: -15%;
+    position: relative;
+    padding: none;
+  }
+  #navbarText .nav-tabs span{
     font-family: 'Avenir';
     font-style: normal;
     font-weight: 900;
@@ -68,7 +81,7 @@ li.active{
     
     color: #828993;
   }
-  .nav-tabs{
+  #navbarText .nav-tabs{
       border-bottom: none !important;
   }
   .promotion{
@@ -88,7 +101,24 @@ li.active{
     height: 3rem;
   }
 /*************end of navtabs***************/
-
+#myTab_1{
+  background: #00175B !important;
+border-radius: 40px !important;
+margin-left: 150px;
+}
+.nav-tabs .nav-item.show .nav-link, .nav-tabs a.active{
+  background: #0019C2;
+border-radius: 40px;
+color: #fff;
+padding: 5px;
+}
+#myTab_1 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+  background: #00175B !important;
+  border-radius: 40px !important;
+}
+#myTab_1  a{
+  color: #818892 !important;
+}
 /****************navbar****************/
 
 .nav-bg{
@@ -203,17 +233,16 @@ font-family: 'Avenir';
 font-style: normal;
 font-weight: 900;
 font-size: 15.5969px;
-
+border-bottom-left-radius:0px;
+border-bottom-right-radius:0px;
 text-align: center;
 border: none;
 color: #333333;
 }
 .play-now{
   background-image: url(../images/play-now.svg);
- 
   border-radius: 20px;
   position: relative;
- 
   background-repeat: no-repeat
 }
 h3{
@@ -225,7 +254,7 @@ line-height: 38px;
 color: #FFFFFF;
 text-shadow: 7px 7px 7px rgba(0, 0, 0, 0.25);
 }
-span{
+.enter-now span{
   color: #80D847;
 }
 .play-now button{
@@ -246,7 +275,7 @@ color: #FFFFFF;
     background-size: contain;
     border-radius: 20px;
     position: relative;
-    height: 79vh;
+    height: 40vh;
     background-repeat: no-repeat;
   }
   .play{
@@ -254,10 +283,215 @@ color: #FFFFFF;
     background-size: contain;
     border-radius: 20px;
     position: relative;
-    height: 79vh;
+    height: 40vh;
     background-repeat: no-repeat
   }
+  #rewards{
+    background: #00175B;
+    border-radius: 20px;
+    /* height: 50vh; */
+  }
+  #rewards h4{
+    font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 18px;
+  line-height: 25px;
+  color: #00FFFF;
+  }
+#rewards .span1{
+  font-family: 'Avenir';
+font-style: normal;
+font-weight: 900;
+font-size: 16px;
+line-height: 22px;
 
+color: #656E76;
+}
+#rewards .span2{
+  font-family: 'Avenir';
+font-style: normal;
+font-weight: 900;
+font-size: 18px;
+line-height: 25px;
+
+color: #FFFFFF;
+}
+#rewards .span3{
+  font-family: 'Avenir';
+font-style: normal;
+font-weight: 900;
+font-size: 16px;
+line-height: 22px;
+
+color: #E6E8EE;
+}
+
+/** Vertical Slider 100% Height */
+.vertical .carousel-item {
+  height: 100%;
+  min-height: 144px;
+  background: no-repeat center center scroll;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* Vertical Slider Animation */
+.vertical .carousel-item-next.carousel-item-left,
+.vertical .carousel-item-prev.carousel-item-right {
+  -webkit-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+}
+
+.vertical .carousel-item-next,
+.vertical .active.carousel-item-right {
+  -webkit-transform: translate3d(0, 100%, 0);
+  transform: translate3d(0, 100% 0);
+}
+
+.vertical .carousel-item-prev,
+.vertical .active.carousel-item-left {
+  -webkit-transform: translate3d(0, -100%, 0);
+  transform: translate3d(0, -100%, 0);
+}
+
+/* Vertical Ccarousel Indicators on Right */
+#carouselExampleIndicators .carousel-indicators {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  margin: auto;
+  height: 20px;
+  right: 10px;
+  left: auto;
+  width: auto;
+  -webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);
+  -ms-transform: rotate(90deg);
+  -o-transform: rotate(90deg);
+  transform: rotate(90deg);
+}
+
+#carouselExampleIndicators .carousel-indicators > li {
+  display: block;
+  border-radius: 12px;
+  width: 12px;
+  height: 12px;
+  border: 0;
+}
+
+#carouselExampleIndicators .carousel-indicators li.active {
+  margin-bottom: 5px;
+  background: #fff;
+}
+
+/* Vertical Carousel Controls on Right */
+#carouselExampleIndicators .carousel.vertical .carousel-control-prev,
+.carousel.vertical .carousel-control-next {
+  left: auto;
+  right: 13.5px;
+  width: 50px;
+}
+#carouselExampleIndicators .carousel.vertical .carousel-control-prev.up {
+  top: 0;
+  bottom: 50%;
+}
+#carouselExampleIndicators .carousel.vertical .carousel-control-next.down {
+  top: 50%;
+  bottom: 0;
+}
+#carouselExampleIndicators .carousel.vertical .carousel-control-prev.up i,
+#carouselExampleIndicators .carousel.vertical .carousel-control-next.down i {
+  position: absolute;
+  top: 50%;
+  z-index: 5;
+  display: inline-block;
+  font-size: 2em;
+}
+#carouselExampleIndicators .carousel.vertical .carousel-control-prev.up i {
+  left: 50%;
+  margin-left: -10px;
+  top: 50%;
+  margin-top: -10px;
+}
+#carouselExampleIndicators .carousel.vertical .carousel-control-next.down i {
+  left: 50%;
+  margin-left: -10px;
+  top: 50%;
+  margin-top: -10px;
+}
+
+/* Vertical Carousel Captions Size */
+#carouselExampleIndicators .carousel-caption {
+  max-width: 100%;
+  width: 100%;
+  height: 85%;
+  left: 0;
+}
+#carouselExampleIndicators .carousel-item img{
+  height: 75px;
+  width: 75px;
+  border-radius: 20px;
+ 
+}
+#carouselExampleIndicators .span_2{
+  color: #65DC41;
+}
+
+.carousel-control .icon-prev, .carousel-control .icon-next, .carousel-control .glyphicon-chevron-left, .carousel-control .glyphicon-chevron-right {
+  top: 0 !important;
+}
+#carouselExampleControls h5{
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 900;
+  font-size: 11px;
+  line-height: 16px;
+  color: #E6E8EE;
+}
+#carouselExampleControls h6{
+  font-family: 'Avenir';
+font-style: normal;
+font-weight: 900;
+font-size: 9px;
+line-height: 16px;
+color: #969696;
+}
+#carouselExampleControls img{
+  height: 80px;
+  width: 80px;
+  border-radius: 20px;
+}
+#carouselExampleControls .carousel-control-prev{
+  position: absolute;
+  top: -42px;
+  left: 212px;
+  /* right: -51px; */
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #0019C2;
+}
+#carouselExampleControls .carousel-control-next{
+  position: absolute;
+  top: -42px;
+  /* left: 212px; */
+  /* right: -51px; */
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  background-color: #0019C2;
+  }
+  .carousel-control-next-icon{
+    width: 15px;
+    height: 15px;
+  }
+  .carousel-control-prev-icon{
+    width: 15px;
+    height: 15px;
+  }
 /****************media query**********/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
