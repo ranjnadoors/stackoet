@@ -6,9 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/style/style.css">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.green.css">
-
+    <link rel="stylesheet" href="assets/style/intlTelInput.css">
 
 </head>
 
@@ -17,8 +15,8 @@
     <div class="container-fluid">
         <div class="row">
             <!----sidenavbar----->
-            <div class="col-md-2  sidenav">
-                <div class="row mt-2">
+            <div class="col-md-2  sidenav d-md-inline d-none">
+                <div class="row mt-2 ">
                     <div class="col-md-6 col-2 casino py-2">
                         <li class="active py-2 px-1"> <a href="#">
                                 <img src="assets/images/Spades.svg" class="img-fluid" alt="">
@@ -47,9 +45,9 @@
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <!--<div class="collapse navbar-collapse" id="navbarTogglerDemo01">-->
-                    <a class="navbar-brand d-md-inline d-none" href="#"><img src="assets/images/logo.svg"
+                    <a class="navbar-brand " href="#"><img src="assets/images/logo.svg"
                             class="img-fluis" alt=""></a>
-                    <div class="row my-2 my-lg-0 serach_item ">
+                    <div class="row my-2 my-lg-0 serach_item d-md-flex d-none">
                         <button class=" my-2 my-sm-0 col-lg-1 col text-lg-left text-center" type="submit">
                             <img src="assets/images/Search.svg" class="img-fluid" alt="">
                         </button>
@@ -58,9 +56,12 @@
 
                     </div>
 
-                    <div><button class="login_btn">Login</button></div>
-                    <div><button class="sign_btn login_btn px-3 py-2">Sign Up</button></div>
-                    <div><button class="depost_btn login_btn px-3 py-2">Depost</button></div>
+
+                    <div class="d-flex">
+                        <div class="d-flex"><button class="login_btn">Login</button></div>
+                        <div><button class="sign_btn login_btn px-3 py-2 ml-4">Sign Up</button></div>
+                        <div class="d-md-block d-none"><button class="depost_btn login_btn px-3 py-2 ml-3">Depost</button></div>
+                    </div>
 
                     <!-- <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
                         <li class="nav-item active">
@@ -83,16 +84,127 @@
         <!------main sidebar-->
 
         <div class="row">
-            <div class="col-md-2 mb-4  sidenav pt-4">
+            <div class="col-md-2  sidenav pt-4 ">
                 <div class="collapse navbar-collapse main-sidebar" id="navbarText">
                     <!--Grid column-->
+                    <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
+                        <li class="nav-item">
+                            <a class="nav-link active cyan-blue" id="home-1-tab" data-toggle="tab" href="#home-1"
+                            role="tab" aria-controls="home" aria-selected="true">
+                           
+                                <div class="row py-1 ">
+                                    <img src="assets/images/home-png 1.svg" class="img-fluid px-2" alt="">
+                                    <span class="pt-1 d-lg-inline d-md-none pr-3">Home</span>
+                                </div>
+                            </a>
 
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cyan-blue" id="slots-1-tab" data-toggle="tab" href="#Slots-1" role="tab"
+                                aria-controls="profile" aria-selected="false">
+                                <div class="row py-1 ">
+                                    <img src="assets/images/slot.svg" class="img-fluid px-1" alt="">
+                                    <span class="pt-1 d-lg-inline d-md-none pr-3">Slots</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cyan-blue" id="Wheel-1-tab" data-toggle="tab" href="#Wheel-1" role="tab"
+                                aria-controls="contact" aria-selected="false">
+                                <div class=" row py-1 ">
+                                    <img src="assets/images/wheel.svg" class="img-fluid " alt="">
+                                    <span class="pt-1 d-lg-inline d-md-none pl-2">Wheel of Fortune</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cyan-blue" id="Promotions-tab" data-toggle="tab" href="#Promotions"
+                                role="tab" aria-controls="contact" aria-selected="false">
+                                <div class="row py-1 ">
+                                    <img src="assets/images/promotion.svg" class="img-fluid" alt="">
+                                    <span class="pt-1 promotion d-lg-inline d-md-none pl-2">Promotions</span>
+                                </div>
+                            </a>
+                            <div class="row">
 
-                    <ul class="nav nav-tabs" id="myTab" role="tablist">
+                                <div class="promotion_items col-3 m-1">
+                                    <img src="assets/images/seven.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="promotion_items col-3 m-1 d-lg-inline d-md-none">
+                                    <img src="assets/images/luddo.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="promotion_items col-3 m-1 d-lg-inline d-md-none">
+                                    <img src="assets/images/gift.svg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            <div class="row d-lg-flex d-md-none">
+                                <div class="promotion_items col-3 m-1">
+                                    <img src="assets/images/spin.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="promotion_items col-3 m-1 pb-3">
+                                    <img src="assets/images/pot.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="promotion_items col-3 m-1 pt-2">
+                                    <img src="assets/images/box.svg" class="img-fluid" alt="">
+                                </div>
+
+                            </div>
+
+                        </li>
+                        <div id="line"><hr  style="" /></div>
+                        <li class="nav-item">
+                            <a class="nav-link cyan-blue" id="Lottery-tab" data-toggle="tab" href="#Lottery" role="tab"
+                                aria-controls="contact" aria-selected="false">
+                                <div class="row py-1">
+                                    <img src="assets/images/lottery.svg" class="img-fluid" alt="">
+                                    <span class="pt-1 d-lg-inline d-md-none pl-2">Lottery</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cyan-blue" id="Rafffel-tab" data-toggle="tab" href="#Rafffel" role="tab"
+                                aria-controls="contact" aria-selected="false">
+                                <div class="row py-1 ">
+                                    <img src="assets/images/raffel.svg" class="img-fluid " alt="">
+                                    <span class="pt-1 d-lg-inline d-md-none pl-1">Rafffel</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cyan-blue" id="Affiliate-tab" data-toggle="tab" href="#Affiliate"
+                                role="tab" aria-controls="contact" aria-selected="false">
+                                <div class="row py-1 ">
+                                    <img src="assets/images/affiliate.svg" class="img-fluid" alt="">
+                                    <span class="pt-1 d-lg-inline d-md-none pl-1">Affiliate</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cyan-blue" id="Platinum-tab" data-toggle="tab" href="#Platinum"
+                                role="tab" aria-controls="contact" aria-selected="false" style="color: #FAFF00;">
+                                <div class="row py-1 ">
+                                    <img src="assets/images/diamond.svg" class="img-fluid" alt="">
+                                    <span class="pt-1 d-lg-inline d-md-none pl-1">Platinum club</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cyan-blue" id="Terms-tab" data-toggle="tab" href="#Terms" role="tab"
+                                aria-controls="contact" aria-selected="false">
+                                <div class="row py-1 ">
+                                    <img src="assets/images/terms.svg" class="img-fluid" alt="">
+                                    <span class="pt-1 d-lg-inline d-md-none pl-1">Terms</span>
+                                </div>
+                            </a>
+                        </li>
+                        <div id="line"><hr  style="" /></div>
+                    </ul>
+
+                    <!-- <ul class="nav nav-pills" id="myTab" role="tablist">
 
                         <li class="nav-item">
-                            <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab"
-                                aria-controls="home" aria-selected="true">
+                            <a class="nav-link active cyan-blue" id="home-1-tab" data-toggle="tab" href="#home-1"
+                                role="tab" aria-controls="home" aria-selected="true">
                                 <div class="row py-1 ">
                                     <img src="assets/images/home-png 1.svg" class="img-fluid px-2" alt="">
                                     <span class="pt-1 d-lg-inline d-md-none text-white pr-3">Home</span>
@@ -101,37 +213,37 @@
                         </li>
 
                         <li class="nav-item">
-                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
-                                aria-controls="profile" aria-selected="false">
-                                <div class="d-flex py-1 ">
-                                    <img src="assets/images/setbet.svg" class="img-fluid px-1" alt="">
+                            <a class="nav-link cyan-blue" id="stackBet-tab" data-toggle="tab" href="#stackBet"
+                                role="tab" aria-controls="profile" aria-selected="false">
+                                <div class="row py-1 ">
+                                    <img src="assets/images/setbet.svg" class="img-fluid" alt="">
                                     <span class="pt-1 d-lg-inline d-md-none">stackBet Classics</span>
                                 </div>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                            <a class="nav-link cyan-blue" id="Slots-tab" data-toggle="tab" href="#Slots" role="tab"
                                 aria-controls="contact" aria-selected="false">
                                 <div class="row py-1 ">
-                                    <img src="assets/images/slot.svg" class="img-fluid px-1" alt="">
+                                    <img src="assets/images/slot.svg" class="img-fluid" alt="">
                                     <span class="pt-1 d-lg-inline d-md-none pr-3">Slots</span>
                                 </div>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                            <a class="nav-link cyan-blue" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
                                 aria-controls="contact" aria-selected="false">
-                                <div class="d-flex py-1 ">
+                                <div class="row py-1 ">
                                     <img src="assets/images/wheel.svg" class="img-fluid " alt="">
                                     <span class="pt-1 d-lg-inline d-md-none">Wheel of Fortune</span>
                                 </div>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                            <a class="nav-link cyan-blue" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
                                 aria-controls="contact" aria-selected="false">
                                 <div class="row py-1 ">
-                                    <img src="assets/images/promotion.svg" class="img-fluid px-2" alt="">
+                                    <img src="assets/images/promotion.svg" class="img-fluid" alt="">
                                     <span class="pt-1 promotion d-lg-inline d-md-none">Promotions</span>
                                 </div>
                             </a>
@@ -163,95 +275,98 @@
                             </div>
 
                         </li>
-                        <hr>
+                        <div style="border: 1px solid grey;"></div>
 
                         <li class="nav-item">
-                            <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
+                            <a class="nav-link cyan-blue" id="profile-tab" data-toggle="tab" href="#profile" role="tab"
                                 aria-controls="profile" aria-selected="false">
-                                <div class="d-flex py-1">
-                                    <img src="assets/images/lottery.svg" class="img-fluid px-2" alt="">
+                                <div class="row py-1">
+                                    <img src="assets/images/lottery.svg" class="img-fluid " alt="">
                                     <span class="pt-1 d-lg-inline d-md-none pr-2">Lottery</span>
                                 </div>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                            <a class="nav-link cyan-blue" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
                                 aria-controls="contact" aria-selected="false">
-                                <div class="d-flex py-1 ">
-                                    <img src="assets/images/raffel.svg" class="img-fluid px-2" alt="">
+                                <div class="row py-1 ">
+                                    <img src="assets/images/raffel.svg" class="img-fluid" alt="">
                                     <span class="pt-1 d-lg-inline d-md-none">Rafffel</span>
                                 </div>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                            <a class="nav-link cyan-blue" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
                                 aria-controls="contact" aria-selected="false">
-                                <div class="d-flex py-1 ">
-                                    <img src="assets/images/affiliate.svg" class="img-fluid px-2" alt="">
+                                <div class="row py-1 ">
+                                    <img src="assets/images/affiliate.svg" class="img-fluid" alt="">
                                     <span class="pt-1 d-lg-inline d-md-none">Affiliate</span>
                                 </div>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                            <a class="nav-link cyan-blue" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
                                 aria-controls="contact" aria-selected="false">
-                                <div class="d-flex py-1 ">
-                                    <img src="assets/images/diamond.svg" class="img-fluid px-2" alt="">
+                                <div class="row py-1 ">
+                                    <img src="assets/images/diamond.svg" class="img-fluid" alt="">
                                     <span class="pt-1 d-lg-inline d-md-none">Platinum club</span>
                                 </div>
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
+                            <a class="nav-link cyan-blue" id="contact-tab" data-toggle="tab" href="#contact" role="tab"
                                 aria-controls="contact" aria-selected="false">
-                                <div class="d-flex py-1 ">
-                                    <img src="assets/images/terms.svg" class="img-fluid px-2" alt="">
+                                <div class="row py-1 ">
+                                    <img src="assets/images/terms.svg" class="img-fluid" alt="">
                                     <span class="pt-1 d-lg-inline d-md-none">Terms</span>
                                 </div>
                             </a>
                         </li>
                         <hr>
-                    </ul>
+                    </ul> -->
                     <div class="mx-2 d-lg-inline d-md-none">
                         <div>
                             <label for="">Language</label>
                         </div>
-
-                        <select class="selectpicker show-tick  px-5 py-3" id="language">
+                        <form>
+                            <input id="phone" name="phone" class="selectpicker px-5 py-3 w-100" placeholder="English" type="tel">
+                            
+                          </form>
+                        <!-- <select class="selectpicker show-tick  px-5 py-3" id="language">
                             <option data-image="assets/images/language.svg">English</option>
+                            <option>Hindi</option>
+                            <option>Urdu</option>
+                        </select> -->
+                    </div>
+                    <br>
+                    <div class="my-2 d-lg-inline d-md-none">
+                        <div class="">
+                            <label for="">Currency</label>
+                        </div>
+                        <select class="selectpicker show-tick  px-5 py-3 currency w-100" id="language">
+                            <option data-image="assets/images/language.svg">Bitcoin</option>
                             <option>Hindi</option>
                             <option>Urdu</option>
                         </select>
                     </div>
-                    <br>
                     <div class="my-2 d-lg-inline d-md-none">
-                        <div>
-                            <label for="">Currency</label>
-                        </div>
-                        <select class="selectpicker show-tick px-5 py-3" data-style="btn-danger">
-                            <option style="background-image:url(assets/images/language.svg);">Bitcoin</option>
-                            <option><img src="assets/images/language.svg">Rupee</option>
-                            <option><img src="assets/images/language.svg">Dollar</option>
-                        </select>
-                    </div>
-                    <div class="my-2 d-lg-inline d-md-none">
-                        <div>
+                        <div class="mt-3">
                             <label for="">Live Support</label>
                         </div>
-                        <select class="selectpicker show-tick  px-5 py-3 live-support" data-style="btn-danger">
-                            <option>Mustard</option>
-                            <option>Ketchup</option>
-                            <option>Relish</option>
+                        <select class="selectpicker show-tick  px-5 py-3 live-support w-100" id="language">
+                            <option data-image="assets/images/language.svg">live support</option>
+                            <option>Hindi</option>
+                            <option>Urdu</option>
                         </select>
                     </div>
                     <div class="my-2 d-lg-inline d-md-none">
-                        <div>
+                        <div class="mt-3">
                             <label for="">Refer</label>
                         </div>
-                        <select class="selectpicker show-tick  px-5 py-3 refer" data-style="btn-danger">
-                            <option>Refer</option>
-                            <option>Ketchup</option>
-                            <option>Relish</option>
+                        <select class="selectpicker show-tick  px-5 py-3 refer w-100" id="language">
+                            <option data-image="assets/images/language.svg">Refer</option>
+                            <option>Hindi</option>
+                            <option>Urdu</option>
                         </select>
                     </div>
 
@@ -259,27 +374,28 @@
             </div>
 
 
-            <div class="col-md-10 mb-4" id="power-stack">
+            <div class="col-md-10" id="power-stack">
 
                 <!-- Tab panels -->
                 <div class="tab-content" id="myTabContent">
-                    <div class="tab-pane fade show active my-4" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <div class="tab-pane fade show active my-4" id="home-1" role="tabpanel"
+                        aria-labelledby="home-1-tab">
                         <div class="enter-now">
                             <div class="row">
-                                <div class="col-md-6 py-2">
+                                <div class="col-lg-6 py-2">
                                     <h1>powerStack</h1>
                                 </div>
-                                <div class="col-md-6 pt-4">
-                                    <h2>£1m Lottery Draw</h2>
-                                    <div class="text-center">
+                                <div class="col-lg-5 pt-4">
+                                    <h2 class="text-lg-right text-center">£1m Lottery Draw</h2>
+                                    <div class="text-lg-right text-center">
                                         <a href="/"><button class="py-2 px-4">ENTER NOW</button></a>
                                     </div>
                                 </div>
                             </div>
                         </div>
 
-                        <div class="row my-4 mx-2">
-                            <div class="col-md-6  py-2">
+                        <div class="row my-4">
+                            <div class="col-lg-6">
                                 <div class="col-12 play-now">
                                     <h3 class="pt-4 px-3">GRAB YOUR <br><span>WELCOME BONUS</span> <br>JOIN NOW &
                                         <span>START</span> <br>WINNING!
@@ -289,20 +405,20 @@
                                     </div>
                                 </div>
                             </div>
-                            <div class="col-md-3">
-                                <div class="buy-ticket">
-
-                                </div>
+                            <div class="col mt-lg-0 mt-3">
+                                <!-- <div class="buy-ticket">
+                                </div> -->
+                                <img src="assets/images/buy-ticket.png" class="img-fluid">
                             </div>
-                            <div class="col-md-3">
-                                <div class="play">
-
-                                </div>
+                            <div class="col  mt-lg-0 mt-3">
+                                <!-- <div class="play">
+                                </div> -->
+                                <img src="assets/images/play.png" class="img-fluid">
                             </div>
                         </div>
                         <div>
-                            <div class="row mx-3" id="rewards">
-                                <div class="col-md-3">
+                            <div class="row mx-1" id="rewards">
+                                <div class="col-lg-3">
                                     <div class="d-flex"><img src="assets/images/reward.svg" class="img-fluid p-3"
                                             alt="">
                                         <h4 class="pt-3">Today’s <span class="text-white">Big Wins</span></h4>
@@ -408,7 +524,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-lg-3">
                                     <div class="d-flex"><img src="assets/images/winning.svg" class="img-fluid p-3"
                                             alt="">
                                         <h4 class="pt-3" style="color: #FF9900;">Top <span class="text-white">Winning
@@ -506,7 +622,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-lg-3">
                                     <div class="d-flex"><img src="assets/images/fire.svg" class="img-fluid p-3" alt="">
                                         <h4 class="pt-3" style="color: #00D916;">Trending <span class="text-white">Right
                                                 Now</span></h4>
@@ -590,7 +706,7 @@
                                         </a>
                                     </div>
                                 </div>
-                                <div class="col-md-3">
+                                <div class="col-lg-3">
                                     <div class="d-flex"><img src="assets/images/recently.svg" class="img-fluid p-3"
                                             alt="">
                                         <h4 class="pt-3 text-white">Recently<span class="text-white">Added</span></h4>
@@ -679,80 +795,133 @@
                             </div>
                             <!---------------top winning games----->
                             <!--------------------horizontal tabs-------------->
+                            <div class="row">
                             <div class="p-5 rounded mb-5" id="horizontal_tabs">
                                 <!-- Rounded tabs -->
-                                <ul id="myTab_1" role="tablist" class="nav nav-tabs nav-pills flex-column flex-sm-row text-center bg-light border-0 rounded-nav">
-                                  <li class="nav-item flex-sm-fill p-3">
-                                    <a id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" class="nav-link border-0  font-weight-bold active"><img src="assets/images/popular.svg">Popular</a>
-                                  </li>
-                                  <li class="nav-item flex-sm-fill p-3">
-                                    <a id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" class="nav-link border-0  font-weight-bold"><img src="assets/images/classic.svg">Claasic</a>
-                                  </li>
-                                  <li class="nav-item flex-sm-fill p-3">
-                                    <a id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" class="nav-link border-0  font-weight-bold "><img src="assets/images/lottery-hr.svg">Lottery</a>
-                                  </li>
-                                  <li class="nav-item flex-sm-fill p-3">
-                                    <a id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" class="nav-link border-0  font-weight-bold"><img src="assets/images/slot-hr.svg">Slot</a>
-                                  </li>
-                                  <li class="nav-item flex-sm-fill p-3">
-                                    <a id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true" class="nav-link border-0  font-weight-bold"><img src="assets/images/wheel-hr.svg">wheel of Fortune</a>
-                                  </li>
+                                <ul id="myTab_1" role="tablist"
+                                    class="nav nav-tabs  flex-column flex-sm-row text-center bg-light border-0 rounded-nav">
+                                    <li class="nav-item flex-sm-fill p-3">
+                                        <a id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
+                                            aria-selected="true"
+                                            class="nav-link border-0 cyan-blue  font-weight-bold  active"><img
+                                                src="assets/images/popular.svg">Popular</a>
+                                    </li>
+                                    <li class="nav-item flex-sm-fill p-3">
+                                        <a id="classic-tab" data-toggle="tab" href="#classic" role="tab"
+                                            aria-controls="home" aria-selected="true"
+                                            class="nav-link border-0 cyan-blue font-weight-bold"><img
+                                                src="assets/images/classic.svg">Claasic</a>
+                                    </li>
+                                    <li class="nav-item flex-sm-fill p-3">
+                                        <a id="Lottery-tab" data-toggle="tab" href="#Lottery" role="tab"
+                                            aria-controls="home" aria-selected="true"
+                                            class="nav-link border-0 cyan-blue font-weight-bold "><img
+                                                src="assets/images/lottery-hr.svg">Lottery</a>
+                                    </li>
+                                    <li class="nav-item flex-sm-fill p-3">
+                                        <a id="Slot-tab" data-toggle="tab" href="#Slot" role="tab" aria-controls="home"
+                                            aria-selected="true"
+                                            class="nav-link border-0 cyan-blue font-weight-bold"><img
+                                                src="assets/images/slot-hr.svg">Slot</a>
+                                    </li>
+                                    <li class="nav-item flex-sm-fill p-3">
+                                        <a id="wheel-tab" data-toggle="tab" href="#wheel" role="tab"
+                                            aria-controls="home" aria-selected="true"
+                                            class="nav-link border-0 cyan-blue  font-weight-bold"><img
+                                                src="assets/images/wheel-hr.svg">wheel of Fortune</a>
+                                    </li>
                                 </ul>
                                 <div id="myTabContent" class="tab-content">
-                                  <div id="home" role="tabpanel" aria-labelledby="home-tab" class="tab-pane fade px-4 py-5 show active">
-                                    <div class="row py-4 px-3" id="claasic-bg">
-                                        <div class="col-6"> <img src="assets/images/classic`game1.svg" alt="">
-                                        <div class="d-flex"><span>stackSpin</span> <span>stackSpin</span></div></div>
-                                        <!-- <div class="col-3"><img src="assets/images/classic-g2.svg" alt="">
-                                        <span>Daily Raffle</span></div> -->
-                                        <div class="col-3"><img src="assets/images/classic-g3.svg" alt="">
-                                        <span>Roulette</span></div>
-                                        <div class="col-3"><img src="assets/images/classic-g4.svg" alt="">
-                                        <span>Crash Wheel</span></div>
+                                    <div id="home" role="tabpanel" aria-labelledby="home-tab">
+
+                                        <div class="tab-pane fade py-2 show active">
+                                            <!----------rectangle------------>
+                                            <div class="w-100">
+                                                <div class="rectangle-bg">
+                                                    <div class="ml-5 pt-lg-3 pt-1 mt-3"><img
+                                                            src="assets/images/fire.svg" class="img-fluid mx-2"
+                                                            alt=""><span class="">Classic</span>
+                                                    </div>
+                                                    <span class="text-white ml-5">Games</span>
+                                                </div>
+                                            </div>
+
+                                            <div class="row py-4 px-3" id="claasic-bg">
+                                                <div class="col-lg-5">
+                                                    <div class="stackspin">
+
+                                                        <h3 class="pt-5 px-3">stack<span>SPIN</span> <br>OVER 50,000
+                                                            <span>DAILY WINNERS</span> <br>
+                                                        </h3>
+                                                        <div class="pb-5 ml-3">
+                                                            <button class="px-3 py-2 stack-btn">Let’s Play Now</button>
+                                                        </div>
+                                                    </div>
+                                                    <div class="row mt-3"><span class="stack-span col">stackSpin</span>
+                                                        <span class="col stack-span">markldn <span
+                                                                class="stack-span1">Won:
+                                                                £15,500</span></span>
+                                                    </div>
+                                                </div>
+                                                <div class="col mt-lg-0 mt-3">
+
+                                                    <img src="assets/images/classic-g2.svg" alt="" class="img-fluid">
+                                                    <div class="row mt-3"><span class="stack-span col">Daily
+                                                            Raffle</span>
+
+                                                    </div>
+                                                    <span></span>
+                                                </div>
+                                                <div class="col  mt-lg-0 mt-3"><img src="assets/images/classic-g3.svg"
+                                                        alt="" class="img-fluid">
+                                                    <div class="row mt-3"><span class="stack-span col">Crash
+                                                            Wheel</span>
+                                                    </div>
+                                                </div>
+                                                <div class="col  mt-lg-0 mt-3">
+                                                    <img src="assets/images/classic-g4.svg" alt="" class="img-fluid">
+                                                    <div class="row mt-3"><span class="stack-span col">Roulette</span>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <!-- End rounded tabs -->
+
                                     </div>
-                                  </div>
-                                  <div id="profile" role="tabpanel" aria-labelledby="profile-tab" class="tab-pane fade px-4 py-5">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                    <p class="text-muted mb-0">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                  </div>
-                                  <div id="contact" role="tabpanel" aria-labelledby="contact-tab" class="tab-pane fade px-4 py-5">
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                                      irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                                  </div>
+
+                                    <div class="tab-pane fade" id="profile" role="tabpanel"
+                                        aria-labelledby="profile-tab">
+                                        <h2>Profile</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eveniet
+                                            earum. Sed
+                                            accusantium eligendi molestiae quo hic velit nobis et, tempora placeat
+                                            ratione rem
+                                            blanditiis voluptates vel ipsam? Facilis, earum!</p>
+                                    </div>
+                                    <div class="tab-pane fade" id="contact" role="tabpanel"
+                                        aria-labelledby="contact-tab">
+                                        <h2>Contact</h2>
+                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eveniet
+                                            earum. Sed
+                                            accusantium eligendi molestiae quo hic velit nobis et, tempora placeat
+                                            ratione rem
+                                            blanditiis voluptates vel ipsam? Facilis, earum!</p>
+
+                                    </div>
                                 </div>
-                                <!-- End rounded tabs -->
-                              </div>
-                            
+                            </div>
                         </div>
                     </div>
-                    <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
-                        <h2>Profile</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eveniet earum. Sed
-                            accusantium eligendi molestiae quo hic velit nobis et, tempora placeat ratione rem
-                            blanditiis voluptates vel ipsam? Facilis, earum!</p>
                     </div>
-                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
-                        <h2>Contact</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eveniet earum. Sed
-                            accusantium eligendi molestiae quo hic velit nobis et, tempora placeat ratione rem
-                            blanditiis voluptates vel ipsam? Facilis, earum!</p>
 
-                    </div>
+                    <!--Grid column-->
+
                 </div>
-
-
             </div>
-            <!--Grid column-->
 
-        </div>
-    </div>
-
-    <!------end main sidebar-->
-    <!---------------end of main header ----------------------->
+            <!------end main sidebar-->
+            <!---------------end of main header ----------------------->
 
 </body>
 <script src="assets/javascript/select.js"></script>
@@ -762,8 +931,7 @@
 <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
 <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.js"></script>
+<script src="assets/javascript/intlTelInput.js"></script>
 <script>
     $(".carousel").carousel({
         interval: 3000,
@@ -786,8 +954,24 @@
         });
     });
 
+</script>
+<script>
+    
+    // Vanilla Javascript
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input,({
+      // options here
+    }));
 
-
+    $(document).ready(function() {
+        $('.iti__flag-container').click(function() { 
+          var countryCode = $('.iti__selected-flag').attr('title');
+          var countryCode = countryCode.replace(/[^0-9]/g,'')
+          $('#phone').val("");
+          $('#phone').val("+"+countryCode+" "+ $('#phone').val());
+       });
+    });
+ 
 </script>
 
 </html>

@@ -4,6 +4,10 @@
     font-family: 'Avenir';
     src: url(../font-family/Avenir-Font/avenir_ff/AvenirLTStd-Book.otf);
   }
+  @font-face {
+    font-family: 'Avenir Next';
+    src: url(../font-family/Avenir-Font/avenir_ff/AvenirLTStd-Black.otf);
+  }
   *{
       font-family: 'Avenir';
   }
@@ -51,29 +55,44 @@ li.active{
     top: 5%;
   }
   /************navtabs*********/
-  #navbarText .nav-tabs  .nav-link.active, .nav-tabs .show>.nav-link {
-    background: linear-gradient(273.04deg, #001185 70.77%, rgba(0, 255, 255, 0.35) 97.43%);
-    border-radius: 0px 30px 30px 0px;
-    left: -15%;
-    position: relative;
-    color: #fff !important;
-    border: none;
+  .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+    background: linear-gradient(273.04deg, #001185 70.77%, rgba(0, 255, 255, 0.35) 97.43%) !important;
+    border-radius: 0px 30px 30px 0px !important;
+    cursor: pointer;
+    color: #fff;
+    left: -7% !important;
+    position: relative !important;
   }
-  #navbarText .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
-    
-  color: #fff;
+  .nav-pills .nav-link{
+    left: -16px !important;
+    position: relative !important;
+  }
+  .nav-pills .nav-link:hover, .nav-pills .show>.nav-link{
+color: #fff !important;
+  }
+  #navbarText >.nav-tabs  .nav-link.active, .nav-tabs .show>.nav-link {
+    background: linear-gradient(273.04deg, #001185 70.77%, rgba(0, 255, 255, 0.35) 97.43%) !important;
+    border-radius: 0px 30px 30px 0px !important;
+    left: -15% !important;
+    position: relative !important;
+    color: #fff !important;
+    border: none !important;
+    padding: 5px !important;
+  }
+  #navbarText .nav-tabs .nav-item.show .nav-link, .nav-tabs a.active{
+    color: #fff;
+  }
+  #navbarText .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link:hover{
+    border: none;
+   
+  
   }
   #navbarText .nav-tabs .nav-link{
     left: -15%;
     position: relative;
   }
-  #navbarText .nav-tabs .nav-link:hover{
-    border: none;
-    left: -15%;
-    position: relative;
-    padding: none;
-  }
-  #navbarText .nav-tabs span{
+  
+  #navbarText .nav-tabs>span{
     font-family: 'Avenir';
     font-style: normal;
     font-weight: 900;
@@ -100,45 +119,132 @@ li.active{
     width: 3rem;
     height: 3rem;
   }
-  .promotion_items span{
+  .promotion_items>span{
     width: 3rem;
     height: 3rem;
   }
 /*************end of navtabs***************/
+.cyan-blue{
+  color: #818892;
+  font-family: 'Avenir';
+font-style: normal;
+font-weight: 900;
+font-size: 18px;
+padding-left: 39px;
+}
 #myTab_1{
   background: #00175B !important;
 border-radius: 40px !important;
 margin-left: 150px;
 }
-.nav-tabs .nav-item.show .nav-link, .nav-tabs a.active{
-  background: #0019C2;
+#myTab_1 >.nav-tabs .nav-item.show .nav-link, .nav-tabs a.active{
+  background: #0019C2 !important;
 border-radius: 40px;
-color: #fff;
+color: #fff !important;
 padding: 5px;
 }
-#myTab_1 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+#myTab_1 >.nav-tabs .nav-item.show .nav-link, .nav-tabs a:hover{
+  color: #818892;
+}
+/* #myTab_1 .nav-pills .nav-link.active, .nav-pills .show>.nav-link{
   background: #00175B !important;
   border-radius: 40px !important;
-}
-#myTab_1  a{
-  color: #818892 !important;
-}
+} */
+
 #claasic-bg{
   background: #00175B;
-border-radius: 20px 20px 20px 20px;
+border-radius: 0px 20px 20px 20px;
 }
 #claasic-bg img{
 border-radius: 20px;
 }
-#claasic-bg span{
+#claasic-bg>span{
   font-family: 'Avenir';
-font-style: normal;
-font-weight: 900;
-font-size: 14px;
-line-height: 19px;
-
-color: #969696;
+  font-style: normal;
+  font-weight: 900;
+  font-size: 14px;
+  line-height: 19px;
+  color: #969696;
   }
+  .rectangle-bg{
+    background: url(../images/rectangle.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    border-top-left-radius: 1.25rem;
+    position: relative;
+    left: -3%;
+    }
+    .rectangle-bg span{
+      font-family: 'Avenir Next';
+      font-style: italic;
+      font-weight: 900;
+      font-size: 24px;
+      line-height: 33px;
+      color: #00A3FF;
+      text-shadow: 7px 7px 7px rgba(0, 0, 0, 0.25);
+    }
+    .stackspin{
+      background: url(../images/classic`game1.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 20px;
+     
+    }
+    .daily-ruffle{
+      background: url(../images/classic-g2.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      border-radius: 20px;
+     
+    }
+    .wheel{
+      background: url(../images/classic-g3.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      border-radius: 20px;
+     
+    }
+    .roul{
+      background: url(../images/classic-g4.svg);
+      background-repeat: no-repeat;
+      background-size: contain;
+      border-radius: 20px;
+     
+    }
+    .stackspin >h3{
+      font-family: 'Avenir Next';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 20px;
+      line-height: 27px;
+      color: #FFFFFF;
+    }
+    .stackspin>h3>span{
+      color: #FFE500;
+    }
+    .stackspin .stack-btn{
+      background: linear-gradient(94.57deg, #FF7A00 7.42%, #FFA800 96.37%);
+      border-radius: 30px;
+      border: transparent;
+      font-family: 'Avenir';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 16px;
+      line-height: 22px;
+      text-align: center;
+      color: #FFFFFF;
+    }
+    .stack-span,.stack-span1{
+      font-family: 'Avenir';
+      font-style: normal;
+      font-weight: 900;
+      font-size: 14px;
+      line-height: 19px;
+      color: #969696;
+    }
+    .stack-span1{
+      color: #80D946;
+    }
 /****************navbar****************/
 
 .nav-bg{
@@ -243,7 +349,7 @@ font-style: normal;
 font-weight: 900;
 font-size: 39.1938px;
 line-height: 54px;
-text-align: center;
+text-align: right;
 color: #FFFFFF;
 }
 .enter-now button{
@@ -265,7 +371,7 @@ color: #333333;
   position: relative;
   background-repeat: no-repeat
 }
-h3{
+.play-now>h3{
   font-family: 'Avenir';
 font-style: normal;
 font-weight: 700;
@@ -274,7 +380,10 @@ line-height: 38px;
 color: #FFFFFF;
 text-shadow: 7px 7px 7px rgba(0, 0, 0, 0.25);
 }
-.enter-now span{
+.play-now>h3>span{
+  color:#80D847 ;
+}
+.enter-now>span{
   color: #80D847;
 }
 .play-now button{
@@ -512,11 +621,32 @@ color: #969696;
     width: 15px;
     height: 15px;
   }
+  hr {
+    border: 0;
+    clear:both;
+    display:block;
+    width: 96%;                
+  background:  rgba(135, 135, 135, 0.31);
+    height: 1px;
+}
+
+
+#line {
+    float: left;
+    
+    height: 20px;                
+}
 /****************media query**********/
 /* Extra small devices (phones, 600px and down) */
 @media only screen and (max-width: 600px) {
   .serach_item{
     width: 9%;
+  }
+  #myTab_1{
+    margin-left: 0;
+  }
+  .rectangle-bg{
+    left: -6%;
   }
 }
 
@@ -525,21 +655,40 @@ color: #969696;
   .serach_item{
     width: 9%;
   }
+  #myTab_1{
+    margin-left: 0;
+  }
+  .rectangle-bg{
+    left: -6%;
+  }
 }
 
 /* Medium devices (landscape tablets, 768px and up) */
-@media only screen and (min-width: 768px) {.serach_item{
+@media only screen and (min-width: 768px) {
+  .serach_item{
   width: 9%;
 }
 .main-sidebar{
   display: block !important;
+}
+#myTab_1{
+  margin-left:0px;
+}
+.rectangle-bg{
+  left: -15px;
 }
 }
 
 /* Large devices (laptops/desktops, 992px and up) */
 @media only screen and (min-width: 992px) {
   .serach_item{
-    width: 50%;
+    width: 15px;
+  }
+  .rectangle-bg{
+    left: -15px;
+  }
+  #myTab_1{
+    margin-left: 150px;
   }
 }
 
