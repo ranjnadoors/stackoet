@@ -8,8 +8,33 @@
     font-family: 'Avenir Next';
     src: url(../font-family/Avenir-Font/avenir_ff/AvenirLTStd-Black.otf);
   }
+  ::-webkit-scrollbar-thumb {
+    background-color: #001234;
+   
+    border: 1px solid transparent;
+  }
+  ::-webkit-scrollbar {
+    width: 16px;
+  }
+
+  
   *{
       font-family: 'Avenir';
+  }
+  #sticky-top{
+    position: sticky;
+    top: 0;
+    z-index: 99;
+  }
+  #fixed-side{
+    position: fixed;
+    z-index: 99;
+    overflow: scroll;
+    left: 0;
+    bottom: 0;
+    top: 13%;
+    height: 100%;
+    scrollbar-width: none;
   }
   .casino {
     display: inline;
@@ -326,6 +351,7 @@ border: 0;
 /********************Dashboard***************/
 #power-stack{
   background: rgba(0, 17, 168, 0.7);
+  margin-left: 16%;
 }
 .enter-now{
   background-image: url(../images/power_stack.svg);
@@ -646,7 +672,10 @@ color: #969696;
     margin-left: 0;
   }
   .rectangle-bg{
-    left: -6%;
+    left: 0%;
+  }
+  #power-stack{
+    margin-left: 0%;
   }
 }
 
@@ -659,7 +688,7 @@ color: #969696;
     margin-left: 0;
   }
   .rectangle-bg{
-    left: -6%;
+    left: 0%;
   }
 }
 
@@ -675,7 +704,7 @@ color: #969696;
   margin-left:0px;
 }
 .rectangle-bg{
-  left: -15px;
+  left: -2px;
 }
 }
 
@@ -685,7 +714,7 @@ color: #969696;
     width: 15px;
   }
   .rectangle-bg{
-    left: -15px;
+    left: 0px;
   }
   #myTab_1{
     margin-left: 150px;

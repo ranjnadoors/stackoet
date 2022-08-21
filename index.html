@@ -13,7 +13,7 @@
 <body>
     <!---------------main header ----------------------->
     <div class="container-fluid">
-        <div class="row">
+        <div class="row" id="sticky-top">
             <!----sidenavbar----->
             <div class="col-md-2  sidenav d-md-inline d-none">
                 <div class="row mt-2 ">
@@ -38,15 +38,14 @@
 
             </div>
             <!----end of sidenavbar----->
-            <div class="col-md-10 px-0">
+            
 
-                <nav class="navbar navbar-expand-md navbar-light nav-bg">
+                <nav class=" col-md-10 navbar navbar-expand-md navbar-light nav-bg">
                     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText">
                         <span class="navbar-toggler-icon"></span>
                     </button>
                     <!--<div class="collapse navbar-collapse" id="navbarTogglerDemo01">-->
-                    <a class="navbar-brand " href="#"><img src="assets/images/logo.svg"
-                            class="img-fluis" alt=""></a>
+                    <a class="navbar-brand " href="#"><img src="assets/images/logo.svg" class="img-fluis" alt=""></a>
                     <div class="row my-2 my-lg-0 serach_item d-md-flex d-none">
                         <button class=" my-2 my-sm-0 col-lg-1 col text-lg-left text-center" type="submit">
                             <img src="assets/images/Search.svg" class="img-fluid" alt="">
@@ -60,7 +59,8 @@
                     <div class="d-flex">
                         <div class="d-flex"><button class="login_btn">Login</button></div>
                         <div><button class="sign_btn login_btn px-3 py-2 ml-4">Sign Up</button></div>
-                        <div class="d-md-block d-none"><button class="depost_btn login_btn px-3 py-2 ml-3">Depost</button></div>
+                        <div class="d-md-block d-none"><button
+                                class="depost_btn login_btn px-3 py-2 ml-3">Depost</button></div>
                     </div>
 
                     <!-- <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
@@ -77,21 +77,21 @@
 
 
                 </nav>
-            </div>
+           
         </div>
 
 
         <!------main sidebar-->
 
         <div class="row">
-            <div class="col-md-2  sidenav pt-4 ">
+            <div class="col-md-2  sidenav pt-md-4 " id="fixed-side">
                 <div class="collapse navbar-collapse main-sidebar" id="navbarText">
                     <!--Grid column-->
                     <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
                         <li class="nav-item">
                             <a class="nav-link active cyan-blue" id="home-1-tab" data-toggle="tab" href="#home-1"
-                            role="tab" aria-controls="home" aria-selected="true">
-                           
+                                role="tab" aria-controls="home" aria-selected="true">
+
                                 <div class="row py-1 ">
                                     <img src="assets/images/home-png 1.svg" class="img-fluid px-2" alt="">
                                     <span class="pt-1 d-lg-inline d-md-none pr-3">Home</span>
@@ -151,7 +151,9 @@
                             </div>
 
                         </li>
-                        <div id="line"><hr  style="" /></div>
+                        <div id="line">
+                            <hr style="" />
+                        </div>
                         <li class="nav-item">
                             <a class="nav-link cyan-blue" id="Lottery-tab" data-toggle="tab" href="#Lottery" role="tab"
                                 aria-controls="contact" aria-selected="false">
@@ -197,7 +199,9 @@
                                 </div>
                             </a>
                         </li>
-                        <div id="line"><hr  style="" /></div>
+                        <div id="line">
+                            <hr style="" />
+                        </div>
                     </ul>
 
                     <!-- <ul class="nav nav-pills" id="myTab" role="tablist">
@@ -329,9 +333,10 @@
                             <label for="">Language</label>
                         </div>
                         <form>
-                            <input id="phone" name="phone" class="selectpicker px-5 py-3 w-100" placeholder="English" type="tel">
-                            
-                          </form>
+                            <input id="phone" name="phone" class="selectpicker px-5 py-3 w-100" placeholder="English"
+                                type="tel">
+
+                        </form>
                         <!-- <select class="selectpicker show-tick  px-5 py-3" id="language">
                             <option data-image="assets/images/language.svg">English</option>
                             <option>Hindi</option>
@@ -377,7 +382,7 @@
             <div class="col-md-10" id="power-stack">
 
                 <!-- Tab panels -->
-                <div class="tab-content" id="myTabContent">
+                <div class="tab-content px-3" id="myTabContent">
                     <div class="tab-pane fade show active my-4" id="home-1" role="tabpanel"
                         aria-labelledby="home-1-tab">
                         <div class="enter-now">
@@ -709,7 +714,7 @@
                                 <div class="col-lg-3">
                                     <div class="d-flex"><img src="assets/images/recently.svg" class="img-fluid p-3"
                                             alt="">
-                                        <h4 class="pt-3 text-white">Recently<span class="text-white">Added</span></h4>
+                                        <h4 class="pt-3 text-white">Recently <span class="text-white">Added</span></h4>
                                     </div>
                                     <div id="carouselExampleControls" class="carousel slide" data-ride="carousel">
                                         <div class="carousel-inner">
@@ -796,123 +801,226 @@
                             <!---------------top winning games----->
                             <!--------------------horizontal tabs-------------->
                             <div class="row">
-                            <div class="p-5 rounded mb-5" id="horizontal_tabs">
-                                <!-- Rounded tabs -->
-                                <ul id="myTab_1" role="tablist"
-                                    class="nav nav-tabs  flex-column flex-sm-row text-center bg-light border-0 rounded-nav">
-                                    <li class="nav-item flex-sm-fill p-3">
-                                        <a id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
-                                            aria-selected="true"
-                                            class="nav-link border-0 cyan-blue  font-weight-bold  active"><img
-                                                src="assets/images/popular.svg">Popular</a>
-                                    </li>
-                                    <li class="nav-item flex-sm-fill p-3">
-                                        <a id="classic-tab" data-toggle="tab" href="#classic" role="tab"
-                                            aria-controls="home" aria-selected="true"
-                                            class="nav-link border-0 cyan-blue font-weight-bold"><img
-                                                src="assets/images/classic.svg">Claasic</a>
-                                    </li>
-                                    <li class="nav-item flex-sm-fill p-3">
-                                        <a id="Lottery-tab" data-toggle="tab" href="#Lottery" role="tab"
-                                            aria-controls="home" aria-selected="true"
-                                            class="nav-link border-0 cyan-blue font-weight-bold "><img
-                                                src="assets/images/lottery-hr.svg">Lottery</a>
-                                    </li>
-                                    <li class="nav-item flex-sm-fill p-3">
-                                        <a id="Slot-tab" data-toggle="tab" href="#Slot" role="tab" aria-controls="home"
-                                            aria-selected="true"
-                                            class="nav-link border-0 cyan-blue font-weight-bold"><img
-                                                src="assets/images/slot-hr.svg">Slot</a>
-                                    </li>
-                                    <li class="nav-item flex-sm-fill p-3">
-                                        <a id="wheel-tab" data-toggle="tab" href="#wheel" role="tab"
-                                            aria-controls="home" aria-selected="true"
-                                            class="nav-link border-0 cyan-blue  font-weight-bold"><img
-                                                src="assets/images/wheel-hr.svg">wheel of Fortune</a>
-                                    </li>
-                                </ul>
-                                <div id="myTabContent" class="tab-content">
-                                    <div id="home" role="tabpanel" aria-labelledby="home-tab">
+                                <div class="pt-4 px-4 rounded" id="horizontal_tabs">
+                                    <!-- Rounded tabs -->
+                                    <ul id="myTab_1" role="tablist"
+                                        class="nav nav-tabs  flex-column flex-sm-row text-center bg-light border-0 rounded-nav">
+                                        <li class="nav-item flex-sm-fill p-3">
+                                            <a id="home-tab" data-toggle="tab" href="#home" role="tab"
+                                                aria-controls="home" aria-selected="true"
+                                                class="nav-link border-0 cyan-blue  font-weight-bold  active"><img
+                                                    src="assets/images/popular.svg">Popular</a>
+                                        </li>
+                                        <li class="nav-item flex-sm-fill p-3">
+                                            <a id="classic-tab" data-toggle="tab" href="#classic" role="tab"
+                                                aria-controls="home" aria-selected="true"
+                                                class="nav-link border-0 cyan-blue font-weight-bold"><img
+                                                    src="assets/images/classic.svg">Claasic</a>
+                                        </li>
+                                        <li class="nav-item flex-sm-fill p-3">
+                                            <a id="Lottery-tab" data-toggle="tab" href="#Lottery" role="tab"
+                                                aria-controls="home" aria-selected="true"
+                                                class="nav-link border-0 cyan-blue font-weight-bold "><img
+                                                    src="assets/images/lottery-hr.svg">Lottery</a>
+                                        </li>
+                                        <li class="nav-item flex-sm-fill p-3">
+                                            <a id="Slot-tab" data-toggle="tab" href="#Slot" role="tab"
+                                                aria-controls="home" aria-selected="true"
+                                                class="nav-link border-0 cyan-blue font-weight-bold"><img
+                                                    src="assets/images/slot-hr.svg">Slot</a>
+                                        </li>
+                                        <li class="nav-item flex-sm-fill p-3">
+                                            <a id="wheel-tab" data-toggle="tab" href="#wheel" role="tab"
+                                                aria-controls="home" aria-selected="true"
+                                                class="nav-link border-0 cyan-blue  font-weight-bold"><img
+                                                    src="assets/images/wheel-hr.svg">wheel of Fortune</a>
+                                        </li>
+                                    </ul>
+                                    <div id="myTabContent" class="tab-content">
+                                        <div id="home" role="tabpanel" aria-labelledby="home-tab">
 
-                                        <div class="tab-pane fade py-2 show active">
-                                            <!----------rectangle------------>
-                                            <div class="w-100">
-                                                <div class="rectangle-bg">
-                                                    <div class="ml-5 pt-lg-3 pt-1 mt-3"><img
-                                                            src="assets/images/fire.svg" class="img-fluid mx-2"
-                                                            alt=""><span class="">Classic</span>
+                                            <div class="tab-pane fade py-2 show active">
+                                                <!----------rectangle------------>
+                                                <div class="w-100">
+                                                    <div class="rectangle-bg">
+                                                        <div class="ml-5 pt-lg-3 pt-1 mt-3"><img
+                                                                src="assets/images/fire.svg" class="img-fluid mx-2"
+                                                                alt=""><span class="">Classic</span>
+                                                        </div>
+                                                        <span class="text-white ml-5">Games</span>
                                                     </div>
-                                                    <span class="text-white ml-5">Games</span>
                                                 </div>
-                                            </div>
+                                                <div id="claasic-bg">
+                                                    <div class="row py-4 px-3" id="">
+                                                        <div class="col-lg-5">
+                                                            <div class="stackspin">
 
-                                            <div class="row py-4 px-3" id="claasic-bg">
-                                                <div class="col-lg-5">
-                                                    <div class="stackspin">
+                                                                <h3 class="pt-5 px-3">stack<span>SPIN</span> <br>OVER
+                                                                    50,000
+                                                                    <span>DAILY WINNERS</span> <br>
+                                                                </h3>
+                                                                <div class="pb-5 ml-3">
+                                                                    <button class="px-3 py-2 stack-btn">Let’s Play
+                                                                        Now</button>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row mt-3"><span
+                                                                    class="stack-span col">stackSpin</span>
+                                                                <span class="col stack-span">markldn <span
+                                                                        class="stack-span1">Won:
+                                                                        £15,500</span></span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col mt-lg-0 mt-3">
 
-                                                        <h3 class="pt-5 px-3">stack<span>SPIN</span> <br>OVER 50,000
-                                                            <span>DAILY WINNERS</span> <br>
-                                                        </h3>
-                                                        <div class="pb-5 ml-3">
-                                                            <button class="px-3 py-2 stack-btn">Let’s Play Now</button>
+                                                            <img src="assets/images/classic-g2.svg" alt=""
+                                                                class="img-fluid">
+                                                            <div class="row mt-3"><span class="stack-span col">Daily
+                                                                    Raffle</span>
+
+                                                            </div>
+
+                                                        </div>
+                                                        <div class="col  mt-lg-0 mt-3"><img
+                                                                src="assets/images/classic-g3.svg" alt=""
+                                                                class="img-fluid">
+                                                            <div class="row mt-3"><span class="stack-span col">Crash
+                                                                    Wheel</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col  mt-lg-0 mt-3">
+                                                            <img src="assets/images/classic-g4.svg" alt=""
+                                                                class="img-fluid">
+                                                            <div class="row mt-3"><span
+                                                                    class="stack-span col">Roulette</span>
+                                                            </div>
                                                         </div>
                                                     </div>
-                                                    <div class="row mt-3"><span class="stack-span col">stackSpin</span>
-                                                        <span class="col stack-span">markldn <span
-                                                                class="stack-span1">Won:
-                                                                £15,500</span></span>
-                                                    </div>
-                                                </div>
-                                                <div class="col mt-lg-0 mt-3">
+                                                    <div class="row px-3 py-2">
 
-                                                    <img src="assets/images/classic-g2.svg" alt="" class="img-fluid">
-                                                    <div class="row mt-3"><span class="stack-span col">Daily
-                                                            Raffle</span>
+                                                        <div class="col  mt-lg-0 mt-3">
+                                                            <img src="assets/images/classic-g4.svg" alt=""
+                                                                class="img-fluid">
+                                                            <div class="row mt-3"><span
+                                                                    class="stack-span col">Roulette</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col  mt-lg-0 mt-3"><img
+                                                                src="assets/images/classic-g3.svg" alt=""
+                                                                class="img-fluid">
+                                                            <div class="row mt-3"><span class="stack-span col">Crash
+                                                                    Wheel</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col  mt-lg-0 mt-3"><img
+                                                                src="assets/images/classic-g3.svg" alt=""
+                                                                class="img-fluid">
+                                                            <div class="row mt-3"><span class="stack-span col">Crash
+                                                                    Wheel</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col  mt-lg-0 mt-3"><img
+                                                                src="assets/images/classic-g3.svg" alt=""
+                                                                class="img-fluid">
+                                                            <div class="row mt-3"><span class="stack-span col">Crash
+                                                                    Wheel</span>
+                                                            </div>
+                                                        </div>
 
                                                     </div>
-                                                    <span></span>
-                                                </div>
-                                                <div class="col  mt-lg-0 mt-3"><img src="assets/images/classic-g3.svg"
-                                                        alt="" class="img-fluid">
-                                                    <div class="row mt-3"><span class="stack-span col">Crash
-                                                            Wheel</span>
+                                                    <div class="row px-3 py-2">
+
+                                                        <div class="col  mt-lg-0 mt-3">
+                                                            <img src="assets/images/classic-g4.svg" alt=""
+                                                                class="img-fluid">
+                                                            <div class="row mt-3"><span
+                                                                    class="stack-span col">Roulette</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col  mt-lg-0 mt-3"><img
+                                                                src="assets/images/classic-g3.svg" alt=""
+                                                                class="img-fluid">
+                                                            <div class="row mt-3"><span class="stack-span col">Crash
+                                                                    Wheel</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col  mt-lg-0 mt-3"><img
+                                                                src="assets/images/classic-g3.svg" alt=""
+                                                                class="img-fluid">
+                                                            <div class="row mt-3"><span class="stack-span col">Crash
+                                                                    Wheel</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col  mt-lg-0 mt-3"><img
+                                                                src="assets/images/classic-g3.svg" alt=""
+                                                                class="img-fluid">
+                                                            <div class="row mt-3"><span class="stack-span col">Crash
+                                                                    Wheel</span>
+                                                            </div>
+                                                        </div>
+
                                                     </div>
-                                                </div>
-                                                <div class="col  mt-lg-0 mt-3">
-                                                    <img src="assets/images/classic-g4.svg" alt="" class="img-fluid">
-                                                    <div class="row mt-3"><span class="stack-span col">Roulette</span>
+                                                    <div class="row px-3 py-2">
+
+                                                        <div class="col  mt-lg-0 mt-3">
+                                                            <img src="assets/images/classic-g4.svg" alt=""
+                                                                class="img-fluid">
+                                                            <div class="row mt-3"><span
+                                                                    class="stack-span col">Roulette</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col  mt-lg-0 mt-3"><img
+                                                                src="assets/images/classic-g3.svg" alt=""
+                                                                class="img-fluid">
+                                                            <div class="row mt-3"><span class="stack-span col">Crash
+                                                                    Wheel</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col  mt-lg-0 mt-3"><img
+                                                                src="assets/images/classic-g3.svg" alt=""
+                                                                class="img-fluid">
+                                                            <div class="row mt-3"><span class="stack-span col">Crash
+                                                                    Wheel</span>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col  mt-lg-0 mt-3"><img
+                                                                src="assets/images/classic-g3.svg" alt=""
+                                                                class="img-fluid">
+                                                            <div class="row mt-3"><span class="stack-span col">Crash
+                                                                    Wheel</span>
+                                                            </div>
+                                                        </div>
+
                                                     </div>
                                                 </div>
                                             </div>
+                                            <!-- End rounded tabs -->
 
                                         </div>
-                                        <!-- End rounded tabs -->
 
-                                    </div>
+                                        <div class="tab-pane fade" id="profile" role="tabpanel"
+                                            aria-labelledby="profile-tab">
+                                            <h2>Profile</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eveniet
+                                                earum. Sed
+                                                accusantium eligendi molestiae quo hic velit nobis et, tempora placeat
+                                                ratione rem
+                                                blanditiis voluptates vel ipsam? Facilis, earum!</p>
+                                        </div>
+                                        <div class="tab-pane fade" id="contact" role="tabpanel"
+                                            aria-labelledby="contact-tab">
+                                            <h2>Contact</h2>
+                                            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eveniet
+                                                earum. Sed
+                                                accusantium eligendi molestiae quo hic velit nobis et, tempora placeat
+                                                ratione rem
+                                                blanditiis voluptates vel ipsam? Facilis, earum!</p>
 
-                                    <div class="tab-pane fade" id="profile" role="tabpanel"
-                                        aria-labelledby="profile-tab">
-                                        <h2>Profile</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eveniet
-                                            earum. Sed
-                                            accusantium eligendi molestiae quo hic velit nobis et, tempora placeat
-                                            ratione rem
-                                            blanditiis voluptates vel ipsam? Facilis, earum!</p>
-                                    </div>
-                                    <div class="tab-pane fade" id="contact" role="tabpanel"
-                                        aria-labelledby="contact-tab">
-                                        <h2>Contact</h2>
-                                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eveniet
-                                            earum. Sed
-                                            accusantium eligendi molestiae quo hic velit nobis et, tempora placeat
-                                            ratione rem
-                                            blanditiis voluptates vel ipsam? Facilis, earum!</p>
-
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     </div>
 
                     <!--Grid column-->
@@ -956,22 +1064,22 @@
 
 </script>
 <script>
-    
+
     // Vanilla Javascript
     var input = document.querySelector("#phone");
-    window.intlTelInput(input,({
-      // options here
+    window.intlTelInput(input, ({
+        // options here
     }));
 
-    $(document).ready(function() {
-        $('.iti__flag-container').click(function() { 
-          var countryCode = $('.iti__selected-flag').attr('title');
-          var countryCode = countryCode.replace(/[^0-9]/g,'')
-          $('#phone').val("");
-          $('#phone').val("+"+countryCode+" "+ $('#phone').val());
-       });
+    $(document).ready(function () {
+        $('.iti__flag-container').click(function () {
+            var countryCode = $('.iti__selected-flag').attr('title');
+            var countryCode = countryCode.replace(/[^0-9]/g, '')
+            $('#phone').val("");
+            $('#phone').val("+" + countryCode + " " + $('#phone').val());
+        });
     });
- 
+
 </script>
 
 </html>
