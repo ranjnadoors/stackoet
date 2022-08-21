@@ -3,4 +3,5 @@ https://www.figma.com/file/9ePneax54BlWEoJ3UAv0w6/stackBet-Outline?node-id=319%3
 https://bc.game/
 
 
-new token : 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
+new token : 
+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

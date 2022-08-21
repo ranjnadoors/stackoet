@@ -14,7 +14,8 @@
     border: 1px solid transparent;
   }
   ::-webkit-scrollbar {
-    width: 16px;
+    width: 5px;
+    background-color:#001185;
   }
 
   
@@ -32,7 +33,7 @@
     overflow: scroll;
     left: 0;
     bottom: 0;
-    top: 13%;
+    top: 7%;
     height: 100%;
     scrollbar-width: none;
   }
@@ -352,6 +353,7 @@ border: 0;
 #power-stack{
   background: rgba(0, 17, 168, 0.7);
   margin-left: 16%;
+  scrollbar-width: none;
 }
 .enter-now{
   background-image: url(../images/power_stack.svg);
@@ -677,6 +679,10 @@ color: #969696;
   #power-stack{
     margin-left: 0%;
   }
+  #fixed-side{
+    position: relative;
+    overflow: hidden;
+  }
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
@@ -689,6 +695,10 @@ color: #969696;
   }
   .rectangle-bg{
     left: 0%;
+  }
+  #fixed-side{
+    position: relative;
+    overflow: hidden;
   }
 }
 
@@ -705,6 +715,16 @@ color: #969696;
 }
 .rectangle-bg{
   left: -2px;
+}
+#fixed-side{
+  position: fixed;
+  z-index: 99;
+  overflow: scroll;
+  left: 0;
+  bottom: 0;
+  top: 7%;
+  height: 100%;
+  scrollbar-width: none;
 }
 }
 
