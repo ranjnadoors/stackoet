@@ -32,7 +32,7 @@
     z-index: 99;
     overflow: scroll;
     left: 0;
-    bottom: 0;
+    bottom: 0%;
     top: 7%;
     height: 100%;
     scrollbar-width: none;
@@ -350,8 +350,11 @@ border: 0;
 }
 /******************end of navbar**********/
 /********************Dashboard***************/
-#power-stack{
+#power-bg{
   background: rgba(0, 17, 168, 0.7);
+}
+#power-stack{
+  
   margin-left: 16%;
   scrollbar-width: none;
 }

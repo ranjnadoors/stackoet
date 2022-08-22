@@ -1,0 +1,15 @@
+[2022-08-22 10:23:27.610] [exthost] [info] Extension host with pid 7359 started
+[2022-08-22 10:23:27.610] [exthost] [info] Skipping acquiring lock for /var/www/html/officework/Stackoet/User/workspaceStorage/355d738984df45e8c0c4092bd593bf0c.
+[2022-08-22 10:23:27.828] [exthost] [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: true, activationEvent: '*'
+[2022-08-22 10:23:27.839] [exthost] [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.github
+[2022-08-22 10:23:27.846] [exthost] [info] ExtensionService#_doActivateExtension vscode.ipynb, startup: true, activationEvent: '*'
+[2022-08-22 10:23:27.926] [exthost] [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+[2022-08-22 10:23:27.972] [exthost] [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+[2022-08-22 10:23:28.065] [exthost] [info] Eager extensions activated
+[2022-08-22 10:23:28.117] [exthost] [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onStartupFinished'
+[2022-08-22 10:23:28.162] [exthost] [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+[2022-08-22 10:23:28.170] [exthost] [info] ExtensionService#_doActivateExtension dbaeumer.vscode-eslint, startup: false, activationEvent: 'onStartupFinished'
+[2022-08-22 10:23:28.205] [exthost] [info] ExtensionService#_doActivateExtension dsznajder.es7-react-js-snippets, startup: false, activationEvent: 'onStartupFinished'
+[2022-08-22 10:27:04.879] [exthost] [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+[2022-08-22 10:28:39.014] [exthost] [info] ExtensionService#_doActivateExtension vscode.html-language-features, startup: false, activationEvent: 'onLanguage:html'
+[2022-08-22 10:28:39.043] [exthost] [info] ExtensionService#_doActivateExtension Angular.ng-template, startup: false, activationEvent: 'onLanguage:html'
