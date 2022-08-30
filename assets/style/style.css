@@ -156,7 +156,7 @@ color: #fff !important;
 font-style: normal;
 font-weight: 900;
 font-size: 18px;
-padding-left: 39px;
+/* padding-left: 39px; */
 }
 #myTab_1{
   background: #00175B !important;
@@ -167,7 +167,7 @@ margin-left: 200px;
   background: #0019C2 !important;
 border-radius: 40px;
 color: #fff !important;
-padding: 5px;
+/* padding: 5px; */
 }
 #myTab_1 >.nav-tabs .nav-item.show .nav-link, .nav-tabs a:hover{
   color: #818892;
@@ -351,7 +351,8 @@ border: 0;
 /******************end of navbar**********/
 /********************Dashboard***************/
 #power-bg{
-  background: rgba(0, 17, 168, 0.7);
+  /* background: rgba(0, 17, 168, 0.7); */
+  background-color:rgba(0, 50, 146, 0.8);
 }
 #power-stack{
   
@@ -361,7 +362,7 @@ border: 0;
 .enter-now{
   background-image: url(../images/power_stack.svg);
   background-repeat: no-repeat;
-  background-size: cover;
+  object-fit: cover;
   border-radius: 20px;
   position: relative;
 }
@@ -899,9 +900,80 @@ text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
   }
 }
 
+.leader{
+  font-family: 'Avenir';
+font-style: normal;
+font-weight: 900;
+font-size: 36px;
+line-height: 49px;
 
+color: #FFFFFF;
+}
+.last{
+  font-family: 'Avenir Next';
+font-style: normal;
+font-weight: 500;
+font-size: 24px !important;
+line-height: 33px !important;
 
+color: #C8C8C8 !important;
 
+text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25) !important;
+}
+#footer{
+  background: #001234;
+border-radius: 10px;
+}
+#footer p{
+  font-family: 'Avenir Next';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 27px;
+
+color: #CBCBCB;
+
+text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+.table-image {
+  vertical-align: middle;}
+
+  td, th {
+    vertical-align: middle;
+  }
+.table{
+ 
+
+}
+tbody{
+  background: rgba(0, 50, 146, 0.8);
+}
+
+.table td, .table th{
+  vertical-align: middle !important;
+}
+#table-border{
+  border: 15px solid #001234;
+  border-radius: 10px;
+}
+#table-border .border-1{
+  border: 1px solid #FF7A00;
+  border-radius: 5px;
+}
+#table-border h1{
+  font-family: 'Avenir Next';
+font-style: normal;
+font-weight: 500;
+font-size: 19.304px;
+line-height: 26px;
+
+color: #FFFFFF;
+
+text-shadow: 4.02166px 4.02166px 4.02166px rgba(0, 0, 0, 0.25);
+}
+#table-border .nav-item a {
+  color: #fff !important;
+}
 
 
 
