@@ -57,8 +57,10 @@
 
 
                 <div class="d-flex">
-                    <div class="d-flex"><button class="login_btn">Login</button></div>
-                    <div><button class="sign_btn login_btn px-md-3 px-1 py-2 ml-md-4 ml-1">Sign Up</button></div>
+                    <div class="d-flex"><button class="login_btn" data-toggle="modal"
+                            data-target="#LoginModal">Login</button></div>
+                    <div><button class="sign_btn login_btn px-md-3 px-1 py-2 ml-md-4 ml-1" data-toggle="modal"
+                            data-target="#SignupModal">Sign Up</button></div>
                     <div class="d-md-block d-none"><button class="depost_btn login_btn px-3 py-2 ml-3">Depost</button>
                     </div>
                 </div>
@@ -89,8 +91,8 @@
                     <!--Grid column-->
                     <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
                         <li class="nav-item pt-4">
-                            <a class="nav-link  cyan-blue" id="home-1-tab" data-toggle="tab" href="#home-1" role="tab"
-                                aria-controls="home" aria-selected="true">
+                            <a class="nav-link active cyan-blue" id="home-1-tab" data-toggle="tab" href="#home-1"
+                                role="tab" aria-controls="home" aria-selected="true">
 
                                 <div class="row py-1 ">
                                     <img src="assets/images/home-png 1.svg" class="img-fluid px-2" alt="">
@@ -99,7 +101,7 @@
                             </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link active cyan-blue" id="stackBet-tab" data-toggle="tab" href="#stackBet"
+                            <a class="nav-link  cyan-blue" id="stackBet-tab" data-toggle="tab" href="#stackBet"
                                 role="tab" aria-controls="stackBet" aria-selected="false">
                                 <div class="row py-1 ">
                                     <img src="assets/images/setbet.svg" class="img-fluid px-1" alt="">
@@ -267,7 +269,8 @@
 
                 <!-- Tab panels -->
                 <div class="tab-content pl-md-3" id="myTabContent">
-                    <div class="tab-pane fade  my-4" id="home-1" role="tabpanel" aria-labelledby="home-1-tab">
+                    <div class="tab-pane fade  my-4 show active" id="home-1" role="tabpanel"
+                        aria-labelledby="home-1-tab">
                         <div class="enter-now">
                             <div class="row">
                                 <div class="col-lg-6 py-2">
@@ -686,188 +689,775 @@
                                 <li class="nav-item flex-sm-fill p-3">
                                     <a id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home"
                                         aria-selected="true"
-                                        class="nav-link border-0 cyan-blue  font-weight-bold  active"><img
+                                        class="nav-link border-0 cyan-blue  font-weight-bold  "><img
                                             src="assets/images/popular.svg">Popular</a>
                                 </li>
                                 <li class="nav-item flex-sm-fill p-3">
                                     <a id="classic-tab" data-toggle="tab" href="#classic" role="tab"
-                                        aria-controls="home" aria-selected="true"
-                                        class="nav-link border-0 cyan-blue font-weight-bold"><img
+                                        aria-controls="classic" aria-selected="false"
+                                        class="nav-link border-0 cyan-blue font-weight-bold active"><img
                                             src="assets/images/classic.svg">Claasic</a>
                                 </li>
                                 <li class="nav-item flex-sm-fill p-3">
                                     <a id="Lottery-tab" data-toggle="tab" href="#Lottery" role="tab"
-                                        aria-controls="home" aria-selected="true"
+                                        aria-controls="home" aria-selected="false"
                                         class="nav-link border-0 cyan-blue font-weight-bold "><img
                                             src="assets/images/lottery-hr.svg">Lottery</a>
                                 </li>
                                 <li class="nav-item flex-sm-fill p-3">
                                     <a id="Slot-tab" data-toggle="tab" href="#Slot" role="tab" aria-controls="home"
-                                        aria-selected="true" class="nav-link border-0 cyan-blue font-weight-bold"><img
+                                        aria-selected="false" class="nav-link border-0 cyan-blue font-weight-bold"><img
                                             src="assets/images/slot-hr.svg">Slot</a>
                                 </li>
                                 <li class="nav-item flex-sm-fill p-3">
                                     <a id="wheel-tab" data-toggle="tab" href="#wheel" role="tab" aria-controls="home"
-                                        aria-selected="true" class="nav-link border-0 cyan-blue  font-weight-bold"><img
+                                        aria-selected="false" class="nav-link border-0 cyan-blue  font-weight-bold"><img
                                             src="assets/images/wheel-hr.svg">wheel of Fortune</a>
                                 </li>
                             </ul>
                             <div id="myTabContent" class="tab-content">
-                                <div id="home" role="tabpanel" aria-labelledby="home-tab">
-
-                                    <div class="tab-pane fade py-2 show active">
-                                        <!----------rectangle------------>
-                                        <div class="w-100">
-                                            <div class="rectangle-bg">
-                                                <div class="ml-5 pt-lg-3 pt-1 mt-3"><img src="assets/images/fire.svg"
-                                                        class="img-fluid mx-2" alt=""><span class="">Classic</span>
-                                                </div>
-                                                <span class="text-white ml-5">Games</span>
+                                <div class="tab-pane fade " id="home" role="tabpanel" aria-labelledby="home-tab">
+                                    <div class="w-100">
+                                        <div class="rectangle-bg">
+                                            <div class="ml-5 pt-lg-3 pt-1 mt-3"><img src="assets/images/fire.svg"
+                                                    class="img-fluid mx-2" alt=""><span class="">Popular</span>
                                             </div>
-                                        </div>
-                                        <div id="claasic-bg">
-                                            <div class="row py-4 px-3" id="">
-                                                <div class="col-lg-5">
-                                                    <div class="stackspin py-2">
-
-                                                        <h3 class="pt-5 px-3">stack<span>SPIN</span> <br>OVER
-                                                            50,000
-                                                            <span>DAILY WINNERS</span> <br>
-                                                        </h3>
-                                                        <div class="pb-5 ml-3">
-                                                            <button class="px-3 py-2 stack-btn">Let’s Play
-                                                                Now</button>
-                                                        </div>
-                                                    </div>
-                                                    <div class="row mt-3"><span class="stack-span col">stackSpin</span>
-                                                        <span class="col stack-span">markldn <span
-                                                                class="stack-span1">Won:
-                                                                £15,500</span></span>
-                                                    </div>
-                                                </div>
-                                                <div class="col mt-lg-0 mt-3">
-
-                                                    <img src="assets/images/classic-g2.svg" alt="" class="img-fluid">
-                                                    <div class="row mt-3"><span class="stack-span col">Daily
-                                                            Raffle</span>
-
-                                                    </div>
-
-                                                </div>
-                                                <div class="col  mt-lg-0 mt-3"><img src="assets/images/classic-g3.svg"
-                                                        alt="" class="img-fluid">
-                                                    <div class="row mt-3"><span class="stack-span col">Crash
-                                                            Wheel</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col  mt-lg-0 mt-3">
-                                                    <img src="assets/images/classic-g4.svg" alt="" class="img-fluid">
-                                                    <div class="row mt-3"><span class="stack-span col">Roulette</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row px-3 py-2">
-                                                <div class="col-lg col-4 mt-lg-0 mt-3">
-                                                    <img src="assets/images/daily.svg" alt="" class="img-fluid">
-                                                    <div class="row mt-3"><span class="stack-span col">Daily
-                                                            Ruffle</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg col-4  mt-lg-0 mt-3">
-                                                    <img src="assets/images/classic-g4.svg" alt="" class="img-fluid">
-                                                    <div class="row mt-3"><span class="stack-span col">Roulette</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg col-4  mt-lg-0 mt-3"><img
-                                                        src="assets/images/classic-g3.svg" alt="" class="img-fluid">
-                                                    <div class="row mt-3"><span class="stack-span col">Crash
-                                                            Wheel</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg col-4  mt-lg-0 mt-3"><img
-                                                        src="assets/images/classic-g3.svg" alt="" class="img-fluid">
-                                                    <div class="row mt-3"><span class="stack-span col">Crash
-                                                            Wheel</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg col-4  mt-lg-0 mt-3"><img
-                                                        src="assets/images/classic-g3.svg" alt="" class="img-fluid">
-                                                    <div class="row mt-3"><span class="stack-span col">Crash
-                                                            Wheel</span>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                            <div class="row px-3 py-2">
-
-                                                <div class="col-lg col-4  mt-lg-0 mt-3">
-                                                    <img src="assets/images/daily.svg" alt="" class="img-fluid">
-                                                    <div class="row mt-3"><span class="stack-span col">Daily
-                                                            Ruffle</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg col-4  mt-lg-0 mt-3">
-                                                    <img src="assets/images/classic-g4.svg" alt="" class="img-fluid">
-                                                    <div class="row mt-3"><span class="stack-span col">Roulette</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg col-4  mt-lg-0 mt-3"><img
-                                                        src="assets/images/classic-g3.svg" alt="" class="img-fluid">
-                                                    <div class="row mt-3"><span class="stack-span col">Crash
-                                                            Wheel</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg col-4  mt-lg-0 mt-3"><img
-                                                        src="assets/images/classic-g3.svg" alt="" class="img-fluid">
-                                                    <div class="row mt-3"><span class="stack-span col">Crash
-                                                            Wheel</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg col-4  mt-lg-0 mt-3"><img
-                                                        src="assets/images/classic-g3.svg" alt="" class="img-fluid">
-                                                    <div class="row mt-3"><span class="stack-span col">Crash
-                                                            Wheel</span>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <div class="row px-3 py-2">
-                                                <div class="col-lg col-4 mt-lg-0 mt-3">
-                                                    <img src="assets/images/daily.svg" alt="" class="img-fluid">
-                                                    <div class="row mt-3"><span class="stack-span col">Daily
-                                                            Ruffle</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg col-4 mt-lg-0 mt-3">
-                                                    <img src="assets/images/classic-g4.svg" alt="" class="img-fluid">
-                                                    <div class="row mt-3"><span class="stack-span col">Roulette</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg col-4  mt-lg-0 mt-3"><img
-                                                        src="assets/images/classic-g3.svg" alt="" class="img-fluid">
-                                                    <div class="row mt-3"><span class="stack-span col">Crash
-                                                            Wheel</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg col-4  mt-lg-0 mt-3"><img
-                                                        src="assets/images/classic-g3.svg" alt="" class="img-fluid">
-                                                    <div class="row mt-3"><span class="stack-span col">Crash
-                                                            Wheel</span>
-                                                    </div>
-                                                </div>
-                                                <div class="col-lg col-4 mt-lg-0 mt-3"><img
-                                                        src="assets/images/classic-g3.svg" alt="" class="img-fluid">
-                                                    <div class="row mt-3"><span class="stack-span col">Crash
-                                                            Wheel</span>
-                                                    </div>
-                                                </div>
-
-                                            </div>
+                                            <span class="text-white ml-5">Games</span>
                                         </div>
                                     </div>
-                                    <!-- End rounded tabs -->
+                                    <div id="claasic-bg">
+                                        <div class="row py-4 px-3" id="">
+                                            <div class="col-lg-5">
+                                                <div class="stackspin py-2">
 
+                                                    <h3 class="pt-5 px-3">stack<span>SPIN</span> <br>OVER
+                                                        50,000
+                                                        <span>DAILY WINNERS</span> <br>
+                                                    </h3>
+                                                    <div class="pb-5 ml-3">
+                                                        <button class="px-3 py-2 stack-btn">Let’s Play
+                                                            Now</button>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-3"><span class="stack-span col">stackSpin</span>
+                                                    <span class="col stack-span">markldn <span class="stack-span1">Won:
+                                                            £15,500</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="col mt-lg-0 mt-3">
+
+                                                <img src="assets/images/classic-g2.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Daily
+                                                        Raffle</span>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="col  mt-lg-0 mt-3"><img src="assets/images/classic-g3.svg"
+                                                    alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col  mt-lg-0 mt-3">
+                                                <img src="assets/images/classic-g4.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Roulette</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row px-3 py-2">
+                                            <div class="col-lg col-4 mt-lg-0 mt-3">
+                                                <img src="assets/images/daily.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Daily
+                                                        Ruffle</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3">
+                                                <img src="assets/images/classic-g4.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Roulette</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row px-3 py-2">
+
+                                            <div class="col-lg col-4  mt-lg-0 mt-3">
+                                                <img src="assets/images/daily.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Daily
+                                                        Ruffle</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3">
+                                                <img src="assets/images/classic-g4.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Roulette</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row px-3 py-2">
+                                            <div class="col-lg col-4 mt-lg-0 mt-3">
+                                                <img src="assets/images/daily.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Daily
+                                                        Ruffle</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4 mt-lg-0 mt-3">
+                                                <img src="assets/images/classic-g4.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Roulette</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4 mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <!-- End rounded tabs -->
+
+
+
+                                <div class="tab-pane fade show active" id="classic" role="tabpanel"
+                                    aria-labelledby="classic-tab">
+                                    <div class="w-100">
+                                        <div class="rectangle-bg">
+                                            <div class="ml-5 pt-lg-3 pt-1 mt-3"><img src="assets/images/fire.svg"
+                                                    class="img-fluid mx-2" alt=""><span class="">Classic</span>
+                                            </div>
+                                            <span class="text-white ml-5">Games</span>
+                                        </div>
+                                    </div>
+                                    <div id="claasic-bg">
+                                        <div class="row py-4 px-3" id="">
+                                            <div class="col-lg-5">
+                                                <div class="stackspin py-2">
+
+                                                    <h3 class="pt-5 px-3">stack<span>SPIN</span> <br>OVER
+                                                        50,000
+                                                        <span>DAILY WINNERS</span> <br>
+                                                    </h3>
+                                                    <div class="pb-5 ml-3">
+                                                        <button class="px-3 py-2 stack-btn">Let’s Play
+                                                            Now</button>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-3"><span class="stack-span col">stackSpin</span>
+                                                    <span class="col stack-span">markldn <span class="stack-span1">Won:
+                                                            £15,500</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="col mt-lg-0 mt-3">
+
+                                                <img src="assets/images/classic-g2.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Daily
+                                                        Raffle</span>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="col  mt-lg-0 mt-3"><img src="assets/images/classic-g3.svg"
+                                                    alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col  mt-lg-0 mt-3">
+                                                <img src="assets/images/classic-g4.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Roulette</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row px-3 py-2">
+                                            <div class="col-lg col-4 mt-lg-0 mt-3">
+                                                <img src="assets/images/daily.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Daily
+                                                        Ruffle</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3">
+                                                <img src="assets/images/classic-g4.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Roulette</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row px-3 py-2">
+
+                                            <div class="col-lg col-4  mt-lg-0 mt-3">
+                                                <img src="assets/images/daily.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Daily
+                                                        Ruffle</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3">
+                                                <img src="assets/images/classic-g4.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Roulette</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row px-3 py-2">
+                                            <div class="col-lg col-4 mt-lg-0 mt-3">
+                                                <img src="assets/images/daily.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Daily
+                                                        Ruffle</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4 mt-lg-0 mt-3">
+                                                <img src="assets/images/classic-g4.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Roulette</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4 mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
                                 </div>
 
+                                <div class="tab-pane fade" id="Lottery" role="tabpanel" aria-labelledby="Lottery-tab">
+                                    <div class="w-100">
+                                        <div class="rectangle-bg">
+                                            <div class="ml-5 pt-lg-3 pt-1 mt-3"><img src="assets/images/fire.svg"
+                                                    class="img-fluid mx-2" alt=""><span class="">Lottery</span>
+                                            </div>
+                                            <span class="text-white ml-5">Games</span>
+                                        </div>
+                                    </div>
+                                    <div id="claasic-bg">
+                                        <div class="row py-4 px-3" id="">
+                                            <div class="col-lg-5">
+                                                <div class="stackspin py-2">
+
+                                                    <h3 class="pt-5 px-3">stack<span>SPIN</span> <br>OVER
+                                                        50,000
+                                                        <span>DAILY WINNERS</span> <br>
+                                                    </h3>
+                                                    <div class="pb-5 ml-3">
+                                                        <button class="px-3 py-2 stack-btn">Let’s Play
+                                                            Now</button>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-3"><span class="stack-span col">stackSpin</span>
+                                                    <span class="col stack-span">markldn <span class="stack-span1">Won:
+                                                            £15,500</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="col mt-lg-0 mt-3">
+
+                                                <img src="assets/images/classic-g2.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Daily
+                                                        Raffle</span>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="col  mt-lg-0 mt-3"><img src="assets/images/classic-g3.svg"
+                                                    alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col  mt-lg-0 mt-3">
+                                                <img src="assets/images/classic-g4.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Roulette</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row px-3 py-2">
+                                            <div class="col-lg col-4 mt-lg-0 mt-3">
+                                                <img src="assets/images/daily.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Daily
+                                                        Ruffle</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3">
+                                                <img src="assets/images/classic-g4.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Roulette</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row px-3 py-2">
+
+                                            <div class="col-lg col-4  mt-lg-0 mt-3">
+                                                <img src="assets/images/daily.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Daily
+                                                        Ruffle</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3">
+                                                <img src="assets/images/classic-g4.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Roulette</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row px-3 py-2">
+                                            <div class="col-lg col-4 mt-lg-0 mt-3">
+                                                <img src="assets/images/daily.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Daily
+                                                        Ruffle</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4 mt-lg-0 mt-3">
+                                                <img src="assets/images/classic-g4.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Roulette</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4 mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="tab-pane fade" id="Slot" role="tabpanel" aria-labelledby="Slot-tab">
+                                    <div class="w-100">
+                                        <div class="rectangle-bg">
+                                            <div class="ml-5 pt-lg-3 pt-1 mt-3"><img src="assets/images/fire.svg"
+                                                    class="img-fluid mx-2" alt=""><span class="">Slot</span>
+                                            </div>
+                                            <span class="text-white ml-5">Games</span>
+                                        </div>
+                                    </div>
+                                    <div id="claasic-bg">
+                                        <div class="row py-4 px-3" id="">
+                                            <div class="col-lg-5">
+                                                <div class="stackspin py-2">
+
+                                                    <h3 class="pt-5 px-3">stack<span>SPIN</span> <br>OVER
+                                                        50,000
+                                                        <span>DAILY WINNERS</span> <br>
+                                                    </h3>
+                                                    <div class="pb-5 ml-3">
+                                                        <button class="px-3 py-2 stack-btn">Let’s Play
+                                                            Now</button>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-3"><span class="stack-span col">stackSpin</span>
+                                                    <span class="col stack-span">markldn <span class="stack-span1">Won:
+                                                            £15,500</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="col mt-lg-0 mt-3">
+
+                                                <img src="assets/images/classic-g2.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Daily
+                                                        Raffle</span>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="col  mt-lg-0 mt-3"><img src="assets/images/classic-g3.svg"
+                                                    alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col  mt-lg-0 mt-3">
+                                                <img src="assets/images/classic-g4.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Roulette</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row px-3 py-2">
+                                            <div class="col-lg col-4 mt-lg-0 mt-3">
+                                                <img src="assets/images/daily.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Daily
+                                                        Ruffle</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3">
+                                                <img src="assets/images/classic-g4.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Roulette</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row px-3 py-2">
+
+                                            <div class="col-lg col-4  mt-lg-0 mt-3">
+                                                <img src="assets/images/daily.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Daily
+                                                        Ruffle</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3">
+                                                <img src="assets/images/classic-g4.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Roulette</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row px-3 py-2">
+                                            <div class="col-lg col-4 mt-lg-0 mt-3">
+                                                <img src="assets/images/daily.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Daily
+                                                        Ruffle</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4 mt-lg-0 mt-3">
+                                                <img src="assets/images/classic-g4.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Roulette</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4 mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane fade" id="wheel" role="tabpanel" aria-labelledby="wheel-tab">
+                                    <div class="w-100">
+                                        <div class="rectangle-bg">
+                                            <div class="ml-5 pt-lg-3 pt-1 mt-3"><img src="assets/images/fire.svg"
+                                                    class="img-fluid mx-2" alt=""><span class="">Wheel</span>
+                                            </div>
+                                            <span class="text-white ml-5">Games</span>
+                                        </div>
+                                    </div>
+                                    <div id="claasic-bg">
+                                        <div class="row py-4 px-3" id="">
+                                            <div class="col-lg-5">
+                                                <div class="stackspin py-2">
+
+                                                    <h3 class="pt-5 px-3">stack<span>SPIN</span> <br>OVER
+                                                        50,000
+                                                        <span>DAILY WINNERS</span> <br>
+                                                    </h3>
+                                                    <div class="pb-5 ml-3">
+                                                        <button class="px-3 py-2 stack-btn">Let’s Play
+                                                            Now</button>
+                                                    </div>
+                                                </div>
+                                                <div class="row mt-3"><span class="stack-span col">stackSpin</span>
+                                                    <span class="col stack-span">markldn <span class="stack-span1">Won:
+                                                            £15,500</span></span>
+                                                </div>
+                                            </div>
+                                            <div class="col mt-lg-0 mt-3">
+
+                                                <img src="assets/images/classic-g2.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Daily
+                                                        Raffle</span>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="col  mt-lg-0 mt-3"><img src="assets/images/classic-g3.svg"
+                                                    alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col  mt-lg-0 mt-3">
+                                                <img src="assets/images/classic-g4.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Roulette</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row px-3 py-2">
+                                            <div class="col-lg col-4 mt-lg-0 mt-3">
+                                                <img src="assets/images/daily.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Daily
+                                                        Ruffle</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3">
+                                                <img src="assets/images/classic-g4.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Roulette</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                        <div class="row px-3 py-2">
+
+                                            <div class="col-lg col-4  mt-lg-0 mt-3">
+                                                <img src="assets/images/daily.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Daily
+                                                        Ruffle</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3">
+                                                <img src="assets/images/classic-g4.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Roulette</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="row px-3 py-2">
+                                            <div class="col-lg col-4 mt-lg-0 mt-3">
+                                                <img src="assets/images/daily.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Daily
+                                                        Ruffle</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4 mt-lg-0 mt-3">
+                                                <img src="assets/images/classic-g4.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Roulette</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4  mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+                                            <div class="col-lg col-4 mt-lg-0 mt-3"><img
+                                                    src="assets/images/classic-g3.svg" alt="" class="img-fluid">
+                                                <div class="row mt-3"><span class="stack-span col">Crash
+                                                        Wheel</span>
+                                                </div>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
 
                             </div>
                         </div>
@@ -875,8 +1465,7 @@
 
                     </div>
                     <!---------stackBet-->
-                    <div class="tab-pane fade my-4 show active" id="stackBet" role="tabpanel"
-                        aria-labelledby="stackBet-tab">
+                    <div class="tab-pane fade my-4 " id="stackBet" role="tabpanel" aria-labelledby="stackBet-tab">
                         <div class="stackspin-1 py-md-5 py-2 px-xlg-4">
                             <div class="row">
                                 <div class="col-lg-7">
@@ -891,204 +1480,232 @@
                             <h4 class="text-uppercase py-md-5 py-2">game api</h4>
                         </div>
                         <h1 class="pl-3" style="font-size:64px ;">stack<span>SPIN</span></h1>
-                        <ul class="nav nav-tabs" role="tablist"
-                            style="background-color: transparant; border-bottom: 0px;">
-                            <li class="nav-item">
-                                <a class="nav-link active text-white border"style="border-radius: 40px;" data-toggle="tab" href="#tabs-1" role="tab">Wheel Of
-                                    Fortune</a>
-                            </li>
-                            <li class="nav-item mx-3">
-                                <a class="nav-link text-white border " style="border-radius: 40px;" data-toggle="tab" href="#tabs-2" role="tab">Lottery</a>
-                            </li>
+                        <div class="row mx-2">
+                            <ul class="nav nav-tabs col-lg-6" role="tablist"
+                                style="background-color: transparant; border-bottom: 0px;">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-white border" style="border-radius: 40px;"
+                                        data-toggle="tab" href="#tabs-1" role="tab">Wheel Of
+                                        Fortune</a>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link text-white border " style="border-radius: 40px;"
+                                        data-toggle="tab" href="#tabs-2" role="tab">Lottery</a>
+                                </li>
 
-                        </ul><!-- Tab panes -->
-                        <div class="tab-content mt-5 ">
-                            <div class="tab-pane active" id="tabs-1" role="tabpanel">
-                                <p style="font-size:24px ;">Get a free daily spin when you sign up to stackBet today.
-                                    Over 1,000 prizes delivered
-                                    daily! Play Wheel of Fortune on stackBet when you sign up for your free account
-                                    here. Win thousands of dollars daily on the hottest crypto wheel of fortune game
-                                    online.</p>
+                            </ul>
+                            <div class="col-lg-6 mt-lg-0 mt-4">
+                                <div class="d-flex justify-content-lg-end justify-content-start"><button
+                                        class="depost_btn login_btn px-5 py-3 ">Depost</button>
+                                    <button class="sign_btn login_btn  px-5 py-3 ml-md-4 ml-1">Sign Up</button>
+                                </div>
                             </div>
-                            <div class="tab-pane" id="tabs-2" role="tabpanel">
-                                <p style="font-size:24px ;">Get a free daily spin when you sign up to stackBet today.
-                                    Over 1,000 prizes delivered
-                                    daily! Play Wheel of Fortune on stackBet when you sign up for your free account
-                                    here. Win thousands of dollars daily on the hottest crypto wheel of fortune game
-                                    online.</p>
+                            <!-- Tab panes -->
+                            <div class="tab-content mt-5 ">
+                                <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                    <p style="font-size:24px ;">Get a free daily spin when you sign up to stackBet
+                                        today.
+                                        Over 1,000 prizes delivered
+                                        daily! Play Wheel of Fortune on stackBet when you sign up for your free account
+                                        here. Win thousands of dollars daily on the hottest crypto wheel of fortune game
+                                        online.</p>
+                                </div>
+                                <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                    <p style="font-size:24px ;">Get a free daily spin when you sign up to stackBet
+                                        today.
+                                        Over 1,000 prizes delivered
+                                        daily! Play Wheel of Fortune on stackBet when you sign up for your free account
+                                        here. Win thousands of dollars daily on the hottest crypto wheel of fortune game
+                                        online.</p>
+                                </div>
+                                <div class="d-md-flex my-4">
+                                    <h2 class="leader text-md-right text-left">Leaderboard</h2>
+                                    <h3 class="last ml-md-5 py-2">Last 7 Days</h3>
+                                </div>
                             </div>
-                            <div class="d-flex my-4">
-                                <h2 class="leader">Leaderboard</h2>
-                                <h3 class="last ml-5 py-2">Last 7 Days</h3>
+                            <div class="" id="table-border">
+                                <div>
+                                    <div class="row mx-3 my-2">
+                                        <h1>Biggest Wins</h1>
+                                    </div>
+                                    <div class="row border-1 mx-2">
+                                        <div class="col-md-4 py-2">
+                                            <div class="d-flex">
+                                                <img src="assets/images/Coin.svg" class="img-fluid img-thumbnail"
+                                                    alt="Sheep">
+                                                <div class="px-3"><span
+                                                        style="font-size: 13px; color:#fff">HarryChee91X</span>
+                                                    <br>
+                                                    <span style="font-size: 10px; color:#CECECE">2 days ago</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 py-3" style="background-color:#1D4BA3 ;">
+                                            <span style="font-size:12px; color:#fff">Payout</span>
+                                            <span style="font-size:21px; color:#FF9900"
+                                                class="py-2 px-2">$28,090.00</span>
+                                        </div>
+                                        <div class="col-md-2 py-1" style="background-color:#1D4BA3 ;"><span
+                                                style="font-size:12px; color:#fff">WAGER</span><br>
+                                            <span style=" color:#BDBDBD" class="py-2 ">$2,138.00</span>
+                                        </div>
+                                        <div class="col-md-2 py-1" style="background-color:#1D4BA3 ;"><span
+                                                style="font-size:12px; color:#fff">MULTIX</span>
+                                            <br> <span class="py-2 ">14.39x</span>
+                                        </div>
+                                    </div>
+                                    <div class="row border-1 my-2 mx-2">
+                                        <div class="col-md-4 py-2">
+                                            <div class="d-flex">
+                                                <img src="assets/images/Silver Medal.svg"
+                                                    class="img-fluid img-thumbnail" alt="Sheep">
+                                                <div class="px-3"><span
+                                                        style="font-size: 13px; color:#fff">HarryChee91X</span>
+                                                    <br>
+                                                    <span style="font-size: 10px; color:#CECECE">2 days ago</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 py-3" style="background-color:#1D4BA3 ;">
+                                            <span style="font-size:12px; color:#fff">Payout</span>
+                                            <span style="font-size:21px; color:#FF9900"
+                                                class="py-2 px-2">$28,090.00</span>
+                                        </div>
+                                        <div class="col-md-2 py-1" style="background-color:#1D4BA3 ;"><span
+                                                style="font-size:12px; color:#fff">WAGER</span><br>
+                                            <span style=" color:#BDBDBD" class="py-2 ">$2,138.00</span>
+                                        </div>
+                                        <div class="col-md-2 py-1" style="background-color:#1D4BA3 ;"><span
+                                                style="font-size:12px; color:#fff">MULTIX</span>
+                                            <br> <span class="py-2 ">14.39x</span>
+                                        </div>
+                                    </div>
+                                    <div class="row border-1 my-2 mx-2">
+                                        <div class="col-md-4 py-2">
+                                            <div class="d-flex">
+                                                <img src="assets/images/Bronze Medal.svg"
+                                                    class="img-fluid img-thumbnail" alt="Sheep">
+                                                <div class="px-3"><span
+                                                        style="font-size: 13px; color:#fff">HarryChee91X</span>
+                                                    <br>
+                                                    <span style="font-size: 10px; color:#CECECE">2 days ago</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 py-3" style="background-color:#1D4BA3 ;">
+                                            <span style="font-size:12px; color:#fff">Payout</span>
+                                            <span style="font-size:21px; color:#FF9900"
+                                                class="py-2 px-2">$28,090.00</span>
+                                        </div>
+                                        <div class="col-md-2 py-1" style="background-color:#1D4BA3 ;"><span
+                                                style="font-size:12px; color:#fff">WAGER</span><br>
+                                            <span style=" color:#BDBDBD" class="py-2 ">$2,138.00</span>
+                                        </div>
+                                        <div class="col-md-2 py-1" style="background-color:#1D4BA3 ;"><span
+                                                style="font-size:12px; color:#fff">MULTIX</span>
+                                            <br> <span class="py-2 ">14.39x</span>
+                                        </div>
+                                    </div>
+
+                                </div>
                             </div>
                         </div>
-                        <div class="container"id="table-border">
-                            <div >
-                                <div class="row mx-3 my-2">
-                                    <h1>Biggest Wins</h1>
-                                </div>
-                                <div class="row border-1 mx-2">
-                                    <div class="col-4 py-2">
-                                        <div class="d-flex">
-                                            <img src="assets/images/Coin.svg" class="img-fluid img-thumbnail"
-                                                alt="Sheep">
-                                            <div class="px-3"><span
-                                                    style="font-size: 13px; color:#fff">HarryChee91X</span>
-                                                <br>
-                                                <span style="font-size: 10px; color:#CECECE">2 days ago</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 py-3" style="background-color:#1D4BA3 ;">
-                                        <span style="font-size:12px; color:#fff">Payout</span>
-                                        <span style="font-size:21px; color:#FF9900" class="py-2 px-2">$28,090.00</span>
-                                    </div>
-                                    <div class="col-2 py-1" style="background-color:#1D4BA3 ;"><span
-                                            style="font-size:12px; color:#fff">WAGER</span><br>
-                                        <span style="font-size:21px; color:#BDBDBD" class="py-2 ">$2,138.00</span>
-                                    </div>
-                                    <div class="col-2 py-1" style="background-color:#1D4BA3 ;"><span
-                                            style="font-size:12px; color:#fff">MULTIX</span>
-                                        <br> <span style="font-size:21px; color:#00FF19" class="py-2 ">14.39x</span>
+                        <div id="footer" class="mt-5 py-4 px-4">
+
+                            <div class="row  px-2 py-4">
+                                <div class="col-lg-4 col-md-6">
+                                    <img src="assets/images/logo.svg" alt="">
+                                    <p class="px-2 py-4 text-left">The Player’s Oasis. Join the fastest growing
+                                        crypto
+                                        casino worldwide and win Bitcoin, Ethereum, Doge and more playing the
+                                        world’s
+                                        hottest lottery and casino games.</p>
+                                    <div class="d-flex">
+                                        <a href="" class="mx-2"><img src="assets/images/Facebook.svg" alt=""></a>
+                                        <a href="" class="mx-2"><img src="assets/images/Instagram.svg" alt=""></a>
+                                        <a href="" class="mx-2"><img src="assets/images/Twitter.svg" alt=""></a>
+                                        <a href="" class="mx-2"><img src="assets/images/Telegram.svg" alt=""></a>
                                     </div>
                                 </div>
-                                <div class="row border-1 my-2 mx-2">
-                                    <div class="col-4 py-2">
-                                        <div class="d-flex">
-                                            <img src="assets/images/Silver Medal.svg" class="img-fluid img-thumbnail"
-                                                alt="Sheep">
-                                            <div class="px-3"><span
-                                                    style="font-size: 13px; color:#fff">HarryChee91X</span>
-                                                <br>
-                                                <span style="font-size: 10px; color:#CECECE">2 days ago</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 py-3" style="background-color:#1D4BA3 ;">
-                                        <span style="font-size:12px; color:#fff">Payout</span>
-                                        <span style="font-size:21px; color:#FF9900" class="py-2 px-2">$28,090.00</span>
-                                    </div>
-                                    <div class="col-2 py-1" style="background-color:#1D4BA3 ;"><span
-                                            style="font-size:12px; color:#fff">WAGER</span><br>
-                                        <span style="font-size:21px; color:#BDBDBD" class="py-2 ">$2,138.00</span>
-                                    </div>
-                                    <div class="col-2 py-1" style="background-color:#1D4BA3 ;"><span
-                                            style="font-size:12px; color:#fff">MULTIX</span>
-                                        <br> <span style="font-size:21px; color:#00FF19" class="py-2 ">14.39x</span>
-                                    </div>
+                                <div class="col-lg-3 col-md-6 mt-md-0 mt-4">
+                                    <!-- Links -->
+                                    <h5 class="text-uppercase">Our Policies</h5>
+
+                                    <ul class="list-unstyled text-left mt-3">
+                                        <li class="py-2">
+                                            <a href="#!">Terms & Conditions</a>
+                                        </li>
+                                        <li class="py-2">
+                                            <a href="#!">Privacy Policy</a>
+                                        </li>
+                                        <li class="py-2">
+                                            <a href="#!">AML</a>
+                                        </li>
+                                        <li class="py-2">
+                                            <a href="#!">Reponsible Gamblingt</a>
+                                        </li>
+
+                                    </ul>
+
                                 </div>
-                                <div class="row border-1 my-2 mx-2">
-                                    <div class="col-4 py-2">
-                                        <div class="d-flex">
-                                            <img src="assets/images/Bronze Medal.svg" class="img-fluid img-thumbnail"
-                                                alt="Sheep">
-                                            <div class="px-3"><span
-                                                    style="font-size: 13px; color:#fff">HarryChee91X</span>
-                                                <br>
-                                                <span style="font-size: 10px; color:#CECECE">2 days ago</span>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="col-4 py-3" style="background-color:#1D4BA3 ;">
-                                        <span style="font-size:12px; color:#fff">Payout</span>
-                                        <span style="font-size:21px; color:#FF9900" class="py-2 px-2">$28,090.00</span>
-                                    </div>
-                                    <div class="col-2 py-1" style="background-color:#1D4BA3 ;"><span
-                                            style="font-size:12px; color:#fff">WAGER</span><br>
-                                        <span style="font-size:21px; color:#BDBDBD" class="py-2 ">$2,138.00</span>
-                                    </div>
-                                    <div class="col-2 py-1" style="background-color:#1D4BA3 ;"><span
-                                            style="font-size:12px; color:#fff">MULTIX</span>
-                                        <br> <span style="font-size:21px; color:#00FF19" class="py-2 ">14.39x</span>
-                                    </div>
+                                <!-- Grid column -->
+
+                                <!-- Grid column -->
+                                <div class="col-lg-2 col-md-6 mb-md-0 mb-3 mt-lg-0 mt-4">
+
+                                    <!-- Links -->
+                                    <h5 class="text-uppercase">Play</h5>
+
+                                    <ul class="list-unstyled text-left">
+                                        <li class="py-2">
+                                            <a href="#!">Lottery</a>
+                                        </li>
+                                        <li class="py-2">
+                                            <a href="#!">Refer & Earn</a>
+                                        </li>
+                                        <li class="py-2">
+                                            <a href="#!">Platinum Club</a>
+                                        </li>
+
+                                    </ul>
+
                                 </div>
-                                <!-- <table class="table table-image table-borderless">
 
-                                        <tbody>
-                                            <tr style="border: 1px solid #FF9900;" class="my-3">
-                                                <td class="w-25 d-flex td-1">
-                                                   
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="mt-2 d-lg-inline ">
 
-                                                </td>
-                                                <td style="background-color:#1D4BA3 ;"><span
-                                                        style="font-size:12px; color:#fff">Payout</span>
-                                                    <span style="font-size:21px; color:#FF9900"
-                                                        class="py-2 px-2">$28,090.00</span>
-                                                </td>
-                                                <td style="background-color:#1D4BA3 ;"><span
-                                                        style="font-size:12px; color:#fff">WAGER</span><br>
-                                                    <span style="font-size:21px; color:#BDBDBD"
-                                                        class="py-2 ">$2,138.00</span>
-                                                </td>
-                                                <td style="background-color:#1D4BA3 ;"><span
-                                                        style="font-size:12px; color:#fff">MULTIX</span>
-                                                    <br> <span style="font-size:21px; color:#00FF19"
-                                                        class="py-2 ">14.39x</span>
-                                                </td>
+                                        <select class="selectpicker show-tick py-3 currency w-75" id="language">
+                                            <option data-image="assets/images/language.svg">English</option>
+                                            <option>Hindi</option>
+                                            <option>Urdu</option>
+                                        </select>
+                                    </div>
 
-                                            </tr>
+                                    <div class="my-2 d-lg-inline">
 
-                                            <tr style="border: 1px solid #FF9900;" class="my-3">
-                                                <td class="w-25 d-flex">
-                                                    <img src="assets/images/Silver Medal.svg"
-                                                        class="img-fluid img-thumbnail" alt="Sheep">
-                                                    <div class="px-3"><span
-                                                            style="font-size: 13px; color:#fff">TomTttttt</span>
-                                                        <br>
-                                                        <span style="font-size: 10px; color:#CECECE">5 days ago</span>
-                                                    </div>
+                                        <select class="selectpicker show-tick   py-3 currency w-75 my-3" id="language">
+                                            <option data-image="assets/images/language.svg">Bitcoin</option>
+                                            <option>Hindi</option>
+                                            <option>Urdu</option>
+                                        </select>
+                                    </div>
+                                    <div class="my-2 d-lg-inline">
 
-                                                </td>
-                                                <td style="background-color:#1D4BA3 ;"><span
-                                                    style="font-size:12px; color:#fff">Payout</span>
-                                                <span style="font-size:21px; color:#FF9900"
-                                                    class="py-2 px-2">$28,090.00</span>
-                                            </td>
-                                            <td style="background-color:#1D4BA3 ;"><span
-                                                    style="font-size:12px; color:#fff">WAGER</span><br>
-                                                <span style="font-size:21px; color:#BDBDBD"
-                                                    class="py-2 ">$2,138.00</span>
-                                            </td>
-                                            <td style="background-color:#1D4BA3 ;"><span
-                                                    style="font-size:12px; color:#fff">MULTIX</span>
-                                                <br> <span style="font-size:21px; color:#00FF19"
-                                                    class="py-2 ">14.39x</span>
-                                            </td>
+                                        <select class="selectpicker show-tick  py-3 live-support w-75" id="language">
+                                            <option data-image="assets/images/language.svg">live support</option>
+                                            <option>Hindi</option>
+                                            <option>Urdu</option>
+                                        </select>
+                                    </div>
 
-                                            </tr>
-                                            <tr style="border: 1px solid #FF9900;" class="my-3">
-                                                <td class="w-25 d-flex">
-                                                    <img src="assets/images/Bronze Medal.svg"
-                                                        class="img-fluid img-thumbnail" alt="Sheep">
-                                                    <div class="px-3"><span
-                                                            style="font-size: 13px; color:#fff">AbbieXcat</span>
-                                                        <br>
-                                                        <span style="font-size: 10px; color:#CECECE">1 days ago</span>
-                                                    </div>
-
-                                                </td>
-                                                <td style="background-color:#1D4BA3 ;"><span
-                                                    style="font-size:12px; color:#fff">Payout</span>
-                                                <span style="font-size:21px; color:#FF9900"
-                                                    class="py-2 px-2">$28,090.00</span>
-                                            </td>
-                                            <td style="background-color:#1D4BA3 ;"><span
-                                                    style="font-size:12px; color:#fff">WAGER</span><br>
-                                                <span style="font-size:21px; color:#BDBDBD"
-                                                    class="py-2 ">$2,138.00</span>
-                                            </td>
-                                            <td style="background-color:#1D4BA3 ;"><span
-                                                    style="font-size:12px; color:#fff">MULTIX</span>
-                                                <br> <span style="font-size:21px; color:#00FF19"
-                                                    class="py-2 ">14.39x</span>
-                                            </td>
-
-                                            </tr>
-                                        </tbody>
-                                    </table> -->
-
+                                </div>
                             </div>
+
                         </div>
+
+
+                        <!--Grid column-->
+
                     </div>
                     <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
                         <h2>Contact</h2>
@@ -1099,26 +1716,105 @@
                             blanditiis voluptates vel ipsam? Facilis, earum!</p>
 
                     </div>
-                    <!--Grid column-->
+                </div>
+
+                <!------end main sidebar-->
+            </div>
+            <!---------------end of main header ----------------------->
+        </div>
+        <!-------------------- sign up Modal-->
+        <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="close ml-auto mr-3 text-white p-4" data-dismiss="modal"
+                        aria-label="Close">
+                        <span aria-hidden="true" class="">&times;</span>
+                    </button>
+                    <div class="modal-header  flex-column justify-content-center py-2">
+                        <div class="ml-auto mr-auto"><img src="assets/images/logo.svg" alt=""></div>
+
+                        <p class="py-2">Join the Player’s Oasis and play on the fastest growing crypto casino worldwide.
+                        </p>
+                        <div class="mx-auto"><span style='font-size:30px; color:white'>&#8595;</span></div>
+                    </div>
+                    <div class="modal-body">
+                        <h1>Create your free stackBet account</h1>
+                        <div class="text-center my-3">
+                            <a href="">Already have an account?</a>
+                        </div>
+                        <form>
+                            <div class="form-group px-4">
+                                <label for="email" class="col-form-label">Email Address</label>
+                                <input type="text" class="form-control py-4" id="email"
+                                    placeholder="Enter Email Address">
+                            </div>
+                            <div class="form-group  px-4">
+                                <label for="password" class="col-form-label">Create Password</label>
+                                <input type="text" class="form-control py-4" id="password" placeholder="Type Password">
+                            </div>
+                            <div class="form-group form-check px-4">
+                                <input type="checkbox" class="form-check-input ml-2 mt-2 p-3" id="Check1">
+                                <label class="col-form-label pl-5" for="Check1">I agree with the user agreement and
+                                    confirm that I am at least 18 years old.</label>
+                            </div>
+                        </form>
+                        <div class="text-center my-3"><button type="button" class="sign_btn py-3 px-5"
+                                data-dismiss="modal">Sign up</button></div>
+                        <div class="text-center my-3">
+                            <a href="">Already have an account?</a>
+                        </div>
+                    </div>
 
                 </div>
             </div>
-            <div class="container-fluid" id="footer">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div><img src="assets/images/logo.svg" alt=""></div>
-                        <p>The Player’s Oasis. Join the fastest growing crypto casino worldwide and win Bitcoin,
-                            Ethereum, Doge and more playing the world’s hottest lottery and casino games.</p>
+        </div>
+        <!-------------------login Modal------->
+        <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="close ml-auto mr-3 text-white p-4" data-dismiss="modal"
+                        aria-label="Close">
+                        <span aria-hidden="true" class="">&times;</span>
+                    </button>
+                    <div class="modal-header  flex-column justify-content-center py-2">
+                        <div class="ml-auto mr-auto"><img src="assets/images/logo.svg" alt=""></div>
+
+                        <p class="py-2">Sign in to your stackBet account below and start playing the world’s hottest
+                            games
+                        </p>
+                        <div class="mx-auto"><span style='font-size:30px; color:white'>&#8595;</span></div>
                     </div>
-                    <div class="col-md-3"></div>
-                    <div class="col-md-3"></div>
-                    <div class="col-md-3"></div>
+                    <div class="modal-body">
+                        <h1>Log in to your stackBet account</h1>
+                        <div class="text-center my-3">
+                            <a href="">Haven’t got an account yet?</a>
+                        </div>
+                        <form>
+                            <div class="form-group px-4">
+                                <label for="email" class="col-form-label">Email Address</label>
+                                <input type="text" class="form-control py-4" id="email" placeholder="Email">
+                            </div>
+                            <div class="form-group  px-4">
+                                <div class="row">
+                                    <label for="password" class="col-form-label col-6">Login Password</label>
+                                    <label for="password" class="col-form-label col-6 text-right"><a href=""
+                                            style="text-decoration: none;font-size:16px;"> Forgot Password?</a>
+                                    </label>
+                                </div>
+                                <input type="text" class="form-control py-4" id="password" placeholder="Enter Password">
+                            </div>
+
+                        </form>
+                        <div class="text-center my-3"><button type="button" class="sign_btn py-3 px-5"
+                                data-dismiss="modal">Sign In</button></div>
+
+                    </div>
+
                 </div>
             </div>
-            <!------end main sidebar-->
         </div>
-        <!---------------end of main header ----------------------->
-    </div>
+        <!--------------------------footer-------------->
+
 </body>
 <script src="assets/javascript/select.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

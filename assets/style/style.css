@@ -920,21 +920,7 @@ color: #C8C8C8 !important;
 
 text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25) !important;
 }
-#footer{
-  background: #001234;
-border-radius: 10px;
-}
-#footer p{
-  font-family: 'Avenir Next';
-font-style: normal;
-font-weight: 500;
-font-size: 20px;
-line-height: 27px;
 
-color: #CBCBCB;
-
-text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
-}
 .table-image {
   vertical-align: middle;}
 
@@ -955,6 +941,7 @@ tbody{
 #table-border{
   border: 15px solid #001234;
   border-radius: 10px;
+  width: 100%;
 }
 #table-border .border-1{
   border: 1px solid #FF7A00;
@@ -971,13 +958,131 @@ color: #FFFFFF;
 
 text-shadow: 4.02166px 4.02166px 4.02166px rgba(0, 0, 0, 0.25);
 }
+#table-border span{
+  font-size: 12px;
+  color: #00FF19;
+}
 #table-border .nav-item a {
   color: #fff !important;
 }
+#SignupModal .modal-content,#LoginModal .modal-content{
+  background: linear-gradient(119deg, #010041 13.48%, #0300AB 100%);
+border-radius: 30px;
+}
+#SignupModal p,#LoginModal p{
+  font-family: 'Avenir';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 27px;
+text-align: center;
+color: #FFFFFF;
+text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+.modal-body{
+  background: #003EB7;
+border-radius: 30px;
+}
+#SignupModal h1,#LoginModal h1{
+  font-family: 'Avenir Next';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 27px;
+text-align: center;
+color: #FFFFFF;
+}
+#SignupModal a,#LoginModal a{
+  font-family: 'Avenir';
+font-style: normal;
+font-weight: 100;
+font-size: 20px;
+line-height: 27px;
+text-align: center;
+text-decoration-line: underline;
+text-underline-position: under;
+color: #DBDBDB;
+}
+.modal-header{
+  border-bottom: 0px !important;
+}
+.col-form-label{
+  font-family: 'Avenir';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
 
+color: #CBCBCB;
+}
+.form-control{
+  background: #0075FF;
+  border-radius: 20px;
+  border: 1px solid transparent;
+}
+.form-control::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+  font-family: 'Avenir';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
+color: #FFFFFF;
+text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+  opacity: 1; /* Firefox */
+  text-decoration: none;
+}
+.form-check label{
+  font-family: 'Avenir';
+font-style: normal;
+font-weight: 500;
+font-size: 16px;
+line-height: 22px;
 
-
-
-
+color: #FFFFFF;
+}
+.form-check-input{
+  height: 20px;
+  width: 20px;
+}
+#SignupModal  .sign_btn{
+  border: 1px solid #fff;
+  color: #fff;
+}
+#LoginModal .sign_btn{
+  background: linear-gradient(93.19deg, #1AB900 5.18%, #21EB00 97.11%);
+border-radius: 38.2353px;
+color: #fff;
+}
+#footer{
+  background: #001234;
+border-radius: 10px;
+}
+#footer p{
+  font-family: 'Avenir';
+font-style: normal;
+font-weight: 500;
+font-size: 20px;
+line-height: 27px;
+color: #CBCBCB;
+text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+#footer h5{
+  font-family: 'Avenir Next';
+font-style: normal;
+font-weight: 700;
+font-size: 20px;
+line-height: 27px;
+color: #CBCBCB;
+text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+#footer li a{
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 27px;
+  color: #CBCBCB;
+   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
 
 
