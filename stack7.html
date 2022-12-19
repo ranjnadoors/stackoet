@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Stackoet</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/style/style.css">
+    <link rel="stylesheet" href="assets/style/intlTelInput.css">
+
+</head>
+
+<body>
+    <!---------------main header ----------------------->
+    <div class="container-fluid">
+        <div class="row" id="sticky-top">
+            <!----sidenavbar----->
+            <div class="col-md-2  sidenav d-md-inline d-none">
+                <div class="row mt-2 ">
+                    <div class="col-md-6 col-2 casino py-2">
+                        <li class="active py-2 px-1"> <a href="#">
+                                <img src="assets/images/Spades.svg" class="img-fluid" alt="">
+                                <span class="d-lg-inline d-none">Casino</span>
+                            </a>
+                        </li>
+                    </div>
+                    <div class="col-md-6 Lottery py-3 col-2">
+                        <a href="#" class="">
+                            <div><img src="assets/images/fire.svg" class="img-fluid fire" alt=""></div>
+                            <img src="assets/images/Lotto.png" class="img-fluid" alt="">
+                            <span class="d-lg-inline d-none">Lottery</span>
+                        </a>
+
+                    </div>
+                </div>
+
+
+
+            </div>
+            <!----end of sidenavbar----->
+
+
+            <nav class=" col-md-10 navbar navbar-expand-md navbar-light nav-bg">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!--<div class="collapse navbar-collapse" id="navbarTogglerDemo01">-->
+                <a class="navbar-brand " href="#"><img src="assets/images/stackBetlogo.png" class="img-fluis" alt=""></a>
+                <div class="row my-2 my-lg-0 serach_item d-md-flex d-none">
+                    <button class=" my-2 my-sm-0 col-lg-1 col text-lg-left text-center" type="submit">
+                        <img src="assets/images/Search.svg" class="img-fluid" alt="">
+                    </button>
+                    <input class="form-control text-left col-10 my-2 d-lg-block d-none" type="search"
+                        placeholder="Search your favourite games" aria-label="Search">
+
+                </div>
+
+
+                <div class="d-flex">
+                    <div class="d-flex"><button class="login_btn" data-toggle="modal"
+                            data-target="#LoginModal">Login</button></div>
+                    <div><button class="sign_btn login_btn px-md-3 px-1 py-2 ml-md-4 ml-1" data-toggle="modal"
+                            data-target="#SignupModal">Sign Up</button></div>
+                    <div class="d-md-block d-none"><button class="depost_btn login_btn px-3 py-2 ml-3">Depost</button>
+                    </div>
+                </div>
+
+                <!-- <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                        <li class="nav-item active">
+                          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link" href="#">Link</a>
+                        </li>
+                        <li class="nav-item">
+                          <a class="nav-link disabled" href="#">Disabled</a>
+                        </li>
+                      </ul> -->
+
+
+            </nav>
+
+        </div>
+
+
+        <!------main sidebar-->
+
+        <div class="row" id="power-bg">
+            <div class="col-md-2  sidenav pt-md-4 mb-md-5 pb-md-5" id="fixed-side">
+                <div class="collapse navbar-collapse main-sidebar" id="navbarText">
+                    <!--Grid column-->
+                    <ul class="nav nav-pills flex-column" id="myTab" role="tablist">
+                        <li class="nav-item pt-4">
+                            <a class="nav-link  cyan-blue"  href="./index.html"
+                                role="tab" aria-controls="home" aria-selected="true">
+
+                                <div class="row py-1 ">
+                                    <img src="assets/images/home-png 1.svg" class="img-fluid px-2" alt="">
+                                    <span class="pt-1 d-lg-inline d-md-none pr-3">Home</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link  cyan-blue active" id="stackBet-tab" data-toggle="tab" href="#stackBet"
+                                role="tab" aria-controls="stackBet" aria-selected="false">
+                                <div class="row py-1 ">
+                                    <img src="assets/images/setbet.svg" class="img-fluid px-1" alt="">
+                                    <span class="pt-1 d-lg-inline d-md-none pr-xlg-3">stackBet Classic</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cyan-blue" id="slots-1-tab" data-toggle="tab" href="#Slots-1" role="tab"
+                                aria-controls="profile" aria-selected="false">
+                                <div class="row py-1 ">
+                                    <img src="assets/images/slot.svg" class="img-fluid px-1" alt="">
+                                    <span class="pt-1 d-lg-inline d-md-none pr-3">Slots</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cyan-blue" id="Wheel-1-tab" data-toggle="tab" href="#Wheel-1" role="tab"
+                                aria-controls="contact" aria-selected="false">
+                                <div class=" row py-1 ">
+                                    <img src="assets/images/wheel.svg" class="img-fluid " alt="">
+                                    <span class="pt-1 d-lg-inline d-md-none pl-xlg-2">Wheel of Fortune</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cyan-blue" id="Promotions-tab" data-toggle="tab" href="#Promotions"
+                                role="tab" aria-controls="contact" aria-selected="false">
+                                <div class="row py-1 ">
+                                    <img src="assets/images/promotion.svg" class="img-fluid" alt="">
+                                    <span class="pt-1 promotion d-lg-inline d-md-none pl-2">Promotions</span>
+                                </div>
+                            </a>
+                            <div class="row">
+
+                                <div class="promotion_items col-3 m-1">
+                                    <img src="assets/images/seven.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="promotion_items col-3 m-1 d-lg-inline d-md-none">
+                                    <img src="assets/images/luddo.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="promotion_items col-3 m-1 d-lg-inline d-md-none">
+                                    <img src="assets/images/gift.svg" class="img-fluid" alt="">
+                                </div>
+                            </div>
+                            <div class="row d-lg-flex d-md-none">
+                                <div class="promotion_items col-3 m-1">
+                                    <img src="assets/images/spin.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="promotion_items col-3 m-1 pb-3">
+                                    <img src="assets/images/pot.svg" class="img-fluid" alt="">
+                                </div>
+                                <div class="promotion_items col-3 m-1 pt-2">
+                                    <img src="assets/images/box.svg" class="img-fluid" alt="">
+                                </div>
+
+                            </div>
+
+                        </li>
+                        <div id="line">
+                            <hr style="" />
+                        </div>
+                        <li class="nav-item">
+                            <a class="nav-link cyan-blue" id="Lottery-tab" data-toggle="tab" href="#Lottery" role="tab"
+                                aria-controls="contact" aria-selected="false">
+                                <div class="row py-1">
+                                    <img src="assets/images/lottery.svg" class="img-fluid" alt="">
+                                    <span class="pt-1 d-lg-inline d-md-none pl-2">Lottery</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cyan-blue" id="Rafffel-tab" data-toggle="tab" href="#Rafffel" role="tab"
+                                aria-controls="contact" aria-selected="false">
+                                <div class="row py-1 ">
+                                    <img src="assets/images/raffel.svg" class="img-fluid " alt="">
+                                    <span class="pt-1 d-lg-inline d-md-none pl-1">Rafffel</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cyan-blue" id="Affiliate-tab" data-toggle="tab" href="#Affiliate"
+                                role="tab" aria-controls="contact" aria-selected="false">
+                                <div class="row py-1 ">
+                                    <img src="assets/images/affiliate.svg" class="img-fluid" alt="">
+                                    <span class="pt-1 d-lg-inline d-md-none pl-1">Affiliate</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cyan-blue" id="Platinum-tab" data-toggle="tab" href="#Platinum"
+                                role="tab" aria-controls="contact" aria-selected="false" style="color: #FAFF00;">
+                                <div class="row py-1 ">
+                                    <img src="assets/images/diamond.svg" class="img-fluid" alt="">
+                                    <span class="pt-1 d-lg-inline d-md-none pl-1">Platinum club</span>
+                                </div>
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link cyan-blue" id="Terms-tab" data-toggle="tab" href="#Terms" role="tab"
+                                aria-controls="contact" aria-selected="false">
+                                <div class="row py-1 ">
+                                    <img src="assets/images/terms.svg" class="img-fluid" alt="">
+                                    <span class="pt-1 d-lg-inline d-md-none pl-1">Terms</span>
+                                </div>
+                            </a>
+                        </li>
+                        <div id="line">
+                            <hr style="" />
+                        </div>
+                    </ul>
+
+                    <div class="mx-2 d-lg-inline d-md-none">
+                        <div>
+                            <label for="">Language</label>
+                        </div>
+                        <form>
+                            <input id="phone" name="phone" class="selectpicker px-5 py-3 w-100" placeholder="English"
+                                type="tel">
+
+                        </form>
+                        <!-- <select class="selectpicker show-tick  px-5 py-3" id="language">
+                            <option data-image="assets/images/language.svg">English</option>
+                            <option>Hindi</option>
+                            <option>Urdu</option>
+                        </select> -->
+                    </div>
+                    <br>
+                    <div class="my-2 d-lg-inline d-md-none">
+                        <div class="">
+                            <label for="">Currency</label>
+                        </div>
+                        <select class="selectpicker show-tick  px-5 py-3 currency w-100" id="language">
+                            <option data-image="assets/images/language.svg">Bitcoin</option>
+                            <option>Hindi</option>
+                            <option>Urdu</option>
+                        </select>
+                    </div>
+                    <div class="my-2 d-lg-inline d-md-none">
+                        <div class="mt-3">
+                            <label for="">Live Support</label>
+                        </div>
+                        <select class="selectpicker show-tick  px-5 py-3 live-support w-100" id="language">
+                            <option data-image="assets/images/language.svg">live support</option>
+                            <option>Hindi</option>
+                            <option>Urdu</option>
+                        </select>
+                    </div>
+                    <div class="my-2 d-lg-inline d-md-none">
+                        <div class="mt-3">
+                            <label for="">Refer</label>
+                        </div>
+                        <select class="selectpicker show-tick  px-5 py-3 refer w-100" id="language">
+                            <option data-image="assets/images/language.svg">Refer</option>
+                            <option>Hindi</option>
+                            <option>Urdu</option>
+                        </select>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <div class="col-md-10" id="power-stack">
+
+                <!-- Tab panels -->
+                <div class="tab-content pl-md-3" id="myTabContent">
+                    
+                    <!---------stackBet-->
+                    <div class="tab-pane fade my-4 show active" id="stackBet" role="tabpanel" aria-labelledby="stackBet-tab">
+                        <div class="stackspin-1 stack7 py-md-5 py-2 px-xlg-4">
+                            <div class="row">
+                                <div class="col-lg-7  pl-5">
+                                    <h1 class="pl-3">stack<span>7</span></h1>
+                                    <h3 class="pl-3">JACKPOT <span style="color:#FFC700 !important ;">£100,000</span></h3>
+                                    <p class="px-3">Pick 7 numbers out of 70 with 17 drawn numbers and 5 prize tiers. Thats over 10 chances to win throughout our three-times-a-week draw. Play now!</p>
+                                    <div>
+                                     <button class="stack7-buy-ticket">BUY TICKET</button></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="api my-md-4 my-2 py-md-5 py-2">
+                            <h4 class="text-uppercase py-md-5 py-2">game api</h4>
+                        </div>
+                        <h1 class="pl-3" style="font-size:64px ;">stack<span style="color: #ADFF00 !important;">7</span></h1>
+                        <div class="row mx-2">
+                            <ul class="nav nav-tabs col-lg-6" role="tablist"
+                                style="background-color: transparant; border-bottom: 0px;">
+                                <li class="nav-item">
+                                    <a class="nav-link active text-white border" style="border-radius: 40px;"
+                                        data-toggle="tab" href="#tabs-1" role="tab">Wheel Of
+                                        Fortune</a>
+                                </li>
+                                <li class="nav-item mx-3">
+                                    <a class="nav-link text-white border " style="border-radius: 40px;"
+                                        data-toggle="tab" href="#tabs-2" role="tab">Lottery</a>
+                                </li>
+
+                            </ul>
+                            <div class="col-lg-6 mt-lg-0 mt-4">
+                                <div class="d-flex justify-content-lg-end justify-content-start"><button
+                                        class="depost_btn login_btn px-5 py-3 ">Depost</button>
+                                    <button class="sign_btn login_btn  px-5 py-3 ml-md-4 ml-1">Sign Up</button>
+                                </div>
+                            </div>
+                            <!-- Tab panes -->
+                            <div class="tab-content mt-5 ">
+                                <div class="tab-pane active" id="tabs-1" role="tabpanel">
+                                    <p style="font-size:24px ;">Pick 7 numbers out of 70 with 17 drawn numbers and 5 prize tiers. Thats over 10 chances to win throughout our three-times-a-week draw. Play now!</p>
+                                </div>
+                                <div class="tab-pane" id="tabs-2" role="tabpanel">
+                                    <p style="font-size:24px ;">Get a free daily spin when you sign up to stackBet
+                                        today.
+                                        Over 1,000 prizes delivered
+                                        daily! Play Wheel of Fortune on stackBet when you sign up for your free account
+                                        here. Win thousands of dollars daily on the hottest crypto wheel of fortune game
+                                        online.</p>
+                                </div>
+                                <div class="d-md-flex my-4">
+                                    <h2 class="leader text-md-right text-left">Leaderboard</h2>
+                                    <h3 class="last ml-md-5 py-2">Last 4 Draws</h3>
+                                </div>
+                            </div>
+                            <div class="" id="table-border">
+                                <div>
+                                    <div class="row mx-3 my-2">
+                                        <h1>Biggest Wins</h1>
+                                    </div>
+                                    <div class="row border-1 mx-2">
+                                        <div class="col-md-4 py-2">
+                                            <div class="d-flex">
+                                                <img src="assets/images/Coin.svg" class="img-fluid img-thumbnail"
+                                                    alt="Sheep">
+                                                <div class="px-3"><span
+                                                        style="font-size: 13px; color:#fff">HarryChee91X</span>
+                                                    <br>
+                                                    <span style="font-size: 10px; color:#CECECE">2 days ago</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 py-3" style="background-color:#1D4BA3 ;">
+                                            <span style="font-size:12px; color:#fff">Payout</span>
+                                            <span style="font-size:21px; color:#FF9900"
+                                                class="py-2 px-2">$28,090.00</span>
+                                        </div>
+                                        <div class="col-md-2 py-1" style="background-color:#1D4BA3 ;"><span
+                                                style="font-size:12px; color:#fff">WAGER</span><br>
+                                            <span style=" color:#BDBDBD" class="py-2 ">$2,138.00</span>
+                                        </div>
+                                        <div class="col-md-2 py-1" style="background-color:#1D4BA3 ;"><span
+                                                style="font-size:12px; color:#fff">MULTIX</span>
+                                            <br> <span class="py-2 ">14.39x</span>
+                                        </div>
+                                    </div>
+                                    <div class="row border-1 my-2 mx-2">
+                                        <div class="col-md-4 py-2">
+                                            <div class="d-flex">
+                                                <img src="assets/images/Silver Medal.svg"
+                                                    class="img-fluid img-thumbnail" alt="Sheep">
+                                                <div class="px-3"><span
+                                                        style="font-size: 13px; color:#fff">HarryChee91X</span>
+                                                    <br>
+                                                    <span style="font-size: 10px; color:#CECECE">2 days ago</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 py-3" style="background-color:#1D4BA3 ;">
+                                            <span style="font-size:12px; color:#fff">Payout</span>
+                                            <span style="font-size:21px; color:#FF9900"
+                                                class="py-2 px-2">$28,090.00</span>
+                                        </div>
+                                        <div class="col-md-2 py-1" style="background-color:#1D4BA3 ;"><span
+                                                style="font-size:12px; color:#fff">WAGER</span><br>
+                                            <span style=" color:#BDBDBD" class="py-2 ">$2,138.00</span>
+                                        </div>
+                                        <div class="col-md-2 py-1" style="background-color:#1D4BA3 ;"><span
+                                                style="font-size:12px; color:#fff">MULTIX</span>
+                                            <br> <span class="py-2 ">14.39x</span>
+                                        </div>
+                                    </div>
+                                    <div class="row border-1 my-2 mx-2">
+                                        <div class="col-md-4 py-2">
+                                            <div class="d-flex">
+                                                <img src="assets/images/Bronze Medal.svg"
+                                                    class="img-fluid img-thumbnail" alt="Sheep">
+                                                <div class="px-3"><span
+                                                        style="font-size: 13px; color:#fff">HarryChee91X</span>
+                                                    <br>
+                                                    <span style="font-size: 10px; color:#CECECE">2 days ago</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-4 py-3" style="background-color:#1D4BA3 ;">
+                                            <span style="font-size:12px; color:#fff">Payout</span>
+                                            <span style="font-size:21px; color:#FF9900"
+                                                class="py-2 px-2">$28,090.00</span>
+                                        </div>
+                                        <div class="col-md-2 py-1" style="background-color:#1D4BA3 ;"><span
+                                                style="font-size:12px; color:#fff">WAGER</span><br>
+                                            <span style=" color:#BDBDBD" class="py-2 ">$2,138.00</span>
+                                        </div>
+                                        <div class="col-md-2 py-1" style="background-color:#1D4BA3 ;"><span
+                                                style="font-size:12px; color:#fff">MULTIX</span>
+                                            <br> <span class="py-2 ">14.39x</span>
+                                        </div>
+                                    </div>
+
+                                </div>
+                            </div>
+                        </div>
+                        <div id="footer" class="mt-5 py-4 px-4">
+
+                            <div class="row  px-2 py-4">
+                                <div class="col-lg-4 col-md-6">
+                                    <img src="assets/images/stackBetlogo.png" alt="">
+                                    <p class="px-2 py-4 text-left">The Player’s Oasis. Join the fastest growing
+                                        crypto
+                                        casino worldwide and win Bitcoin, Ethereum, Doge and more playing the
+                                        world’s
+                                        hottest lottery and casino games.</p>
+                                    <div class="d-flex">
+                                        <a href="" class="mx-2"><img src="assets/images/Facebook.svg" alt=""></a>
+                                        <a href="" class="mx-2"><img src="assets/images/Instagram.svg" alt=""></a>
+                                        <a href="" class="mx-2"><img src="assets/images/Twitter.svg" alt=""></a>
+                                        <a href="" class="mx-2"><img src="assets/images/Telegram.svg" alt=""></a>
+                                    </div>
+                                </div>
+                                <div class="col-lg-3 col-md-6 mt-md-0 mt-4">
+                                    <!-- Links -->
+                                    <h5 class="text-uppercase">Our Policies</h5>
+
+                                    <ul class="list-unstyled text-left mt-3">
+                                        <li class="py-2">
+                                            <a href="#!">Terms & Conditions</a>
+                                        </li>
+                                        <li class="py-2">
+                                            <a href="#!">Privacy Policy</a>
+                                        </li>
+                                        <li class="py-2">
+                                            <a href="#!">AML</a>
+                                        </li>
+                                        <li class="py-2">
+                                            <a href="#!">Reponsible Gamblingt</a>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+                                <!-- Grid column -->
+
+                                <!-- Grid column -->
+                                <div class="col-lg-2 col-md-6 mb-md-0 mb-3 mt-lg-0 mt-4">
+
+                                    <!-- Links -->
+                                    <h5 class="text-uppercase">Play</h5>
+
+                                    <ul class="list-unstyled text-left">
+                                        <li class="py-2">
+                                            <a href="#!">Lottery</a>
+                                        </li>
+                                        <li class="py-2">
+                                            <a href="#!">Refer & Earn</a>
+                                        </li>
+                                        <li class="py-2">
+                                            <a href="#!">Platinum Club</a>
+                                        </li>
+
+                                    </ul>
+
+                                </div>
+
+                                <div class="col-lg-3 col-md-6">
+                                    <div class="mt-2 d-lg-inline ">
+
+                                        <select class="selectpicker show-tick py-3 currency w-75" id="language">
+                                            <option data-image="assets/images/language.svg">English</option>
+                                            <option>Hindi</option>
+                                            <option>Urdu</option>
+                                        </select>
+                                    </div>
+
+                                    <div class="my-2 d-lg-inline">
+
+                                        <select class="selectpicker show-tick   py-3 currency w-75 my-3" id="language">
+                                            <option data-image="assets/images/language.svg">Bitcoin</option>
+                                            <option>Hindi</option>
+                                            <option>Urdu</option>
+                                        </select>
+                                    </div>
+                                    <div class="my-2 d-lg-inline">
+
+                                        <select class="selectpicker show-tick  py-3 live-support w-75" id="language">
+                                            <option data-image="assets/images/language.svg">live support</option>
+                                            <option>Hindi</option>
+                                            <option>Urdu</option>
+                                        </select>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </div>
+
+
+                        <!--Grid column-->
+
+                    </div>
+                    <div class="tab-pane fade" id="contact" role="tabpanel" aria-labelledby="contact-tab">
+                        <h2>Contact</h2>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Neque, eveniet
+                            earum. Sed
+                            accusantium eligendi molestiae quo hic velit nobis et, tempora placeat
+                            ratione rem
+                            blanditiis voluptates vel ipsam? Facilis, earum!</p>
+
+                    </div>
+                </div>
+
+                <!------end main sidebar-->
+            </div>
+            <!---------------end of main header ----------------------->
+        </div>
+        <!-------------------- sign up Modal-->
+        <div class="modal fade" id="SignupModal" tabindex="-1" aria-labelledby="SignupModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="close ml-auto mr-3 text-white p-4" data-dismiss="modal"
+                        aria-label="Close">
+                        <span aria-hidden="true" class="">&times;</span>
+                    </button>
+                    <div class="modal-header  flex-column justify-content-center py-2">
+                        <div class="ml-auto mr-auto"><img src="assets/images/stackBetlogo.png" alt=""></div>
+
+                        <p class="py-2">Join the Player’s Oasis and play on the fastest growing crypto casino worldwide.
+                        </p>
+                        <div class="mx-auto"><span style='font-size:30px; color:white'>&#8595;</span></div>
+                    </div>
+                    <div class="modal-body">
+                        <h1>Create your free stackBet account</h1>
+                        <div class="text-center my-3">
+                            <a href="">Already have an account?</a>
+                        </div>
+                        <form>
+                            <div class="form-group px-4">
+                                <label for="email" class="col-form-label">Email Address</label>
+                                <input type="text" class="form-control py-4" id="email"
+                                    placeholder="Enter Email Address">
+                            </div>
+                            <div class="form-group  px-4">
+                                <label for="password" class="col-form-label">Create Password</label>
+                                <input type="text" class="form-control py-4" id="password" placeholder="Type Password">
+                            </div>
+                            <div class="form-group form-check px-4">
+                                <input type="checkbox" class="form-check-input ml-2 mt-2 p-3" id="Check1">
+                                <label class="col-form-label pl-5" for="Check1">I agree with the user agreement and
+                                    confirm that I am at least 18 years old.</label>
+                            </div>
+                        </form>
+                        <div class="text-center my-3"><button type="button" class="sign_btn py-3 px-5"
+                                data-dismiss="modal">Sign up</button></div>
+                        <div class="text-center my-3">
+                            <a href="">Already have an account?</a>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!-------------------login Modal------->
+        <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="LoginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <button type="button" class="close ml-auto mr-3 text-white p-4" data-dismiss="modal"
+                        aria-label="Close">
+                        <span aria-hidden="true" class="">&times;</span>
+                    </button>
+                    <div class="modal-header  flex-column justify-content-center py-2">
+                        <div class="ml-auto mr-auto"><img src="assets/images/stackBetlogo.png" alt=""></div>
+
+                        <p class="py-2">Sign in to your stackBet account below and start playing the world’s hottest
+                            games
+                        </p>
+                        <div class="mx-auto"><span style='font-size:30px; color:white'>&#8595;</span></div>
+                    </div>
+                    <div class="modal-body">
+                        <h1>Log in to your stackBet account</h1>
+                        <div class="text-center my-3">
+                            <a href="">Haven’t got an account yet?</a>
+                        </div>
+                        <form>
+                            <div class="form-group px-4">
+                                <label for="email" class="col-form-label">Email Address</label>
+                                <input type="text" class="form-control py-4" id="email" placeholder="Email">
+                            </div>
+                            <div class="form-group  px-4">
+                                <div class="row">
+                                    <label for="password" class="col-form-label col-6">Login Password</label>
+                                    <label for="password" class="col-form-label col-6 text-right"><a href=""
+                                            style="text-decoration: none;font-size:16px;"> Forgot Password?</a>
+                                    </label>
+                                </div>
+                                <input type="text" class="form-control py-4" id="password" placeholder="Enter Password">
+                            </div>
+
+                        </form>
+                        <div class="text-center my-3"><button type="button" class="sign_btn py-3 px-5"
+                                data-dismiss="modal">Sign In</button></div>
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+        <!--------------------------footer-------------->
+
+</body>
+<script src="assets/javascript/select.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script src="assets/bootstrap/js/bootstrap.bundle.min.js"></script>
+<!-- <script src="https://cdn.jsdelivr.net/npm/jquery@3.6.0/dist/jquery.slim.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script> -->
+<!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script> -->
+<script src="assets/javascript/intlTelInput.js"></script>
+<script>
+    $('.nav-link').on('click', function () {
+        $('.navbar-collapse').collapse('hide');
+    });</script>
+<script>
+    $(".carousel").carousel({
+        interval: 3000,
+
+    });
+
+    //scroll slides on swipe for touch enabled devices
+    $(".carousel").on("touchstart", function (event) {
+        var yClick = event.originalEvent.touches[0].pageY;
+        $(this).one("touchmove", function (event) {
+            var yMove = event.originalEvent.touches[0].pageY;
+            if (Math.floor(yClick - yMove) > 1) {
+                $(".carousel").carousel("next");
+            } else if (Math.floor(yClick - yMove) < -1) {
+                $(".carousel").carousel("prev");
+            }
+        });
+        $(".carousel").on("touchend", function () {
+            $(this).off("touchmove");
+        });
+    });
+
+</script>
+<script>
+
+    // Vanilla Javascript
+    var input = document.querySelector("#phone");
+    window.intlTelInput(input, ({
+        // options here
+    }));
+
+    $(document).ready(function () {
+        $('.iti__flag-container').click(function () {
+            var countryCode = $('.iti__selected-flag').attr('title');
+            var countryCode = countryCode.replace(/[^0-9]/g, '')
+            $('#phone').val("");
+            $('#phone').val("+" + countryCode + " " + $('#phone').val());
+        });
+    });
+
+</script>
+
+</html>

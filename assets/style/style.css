@@ -8,6 +8,26 @@
     font-family: 'Avenir Next';
     src: url(../font-family/Avenir-Font/avenir_ff/AvenirLTStd-Black.otf);
   }
+  @font-face {
+    font-family: 'Mitr-Bold';
+    src: url(../font-family/Mitr/Mitr-Bold.ttf);
+  }
+  @font-face {
+    font-family: 'Mitr-ExtraLight';
+    src: url(../font-family/Mitr/Mitr-ExtraLight.ttf);
+  }
+  @font-face {
+    font-family: 'Mitr-Light';
+    src: url(../font-family/Mitr/Mitr-Light.ttf);
+  }
+  @font-face {
+    font-family: 'Mitr-Medium';
+    src: url(../font-family/Mitr/Mitr-Medium.ttf);
+  }
+  @font-face {
+    font-family: 'Mitr-SemiBold';
+    src: url(../font-family/Mitr/Mitr-SemiBold.ttf);
+  }
   ::-webkit-scrollbar-thumb {
     background-color: #001234;
    
@@ -164,7 +184,7 @@ border-radius: 40px !important;
 margin-left: 200px;
 }
 #myTab_1 >.nav-tabs .nav-item.show .nav-link, .nav-tabs a.active{
-  background: #0019C2 !important;
+  background: #0019C2 ;
 border-radius: 40px;
 color: #fff !important;
 /* padding: 5px; */
@@ -744,11 +764,11 @@ line-height: 33px;
 color: #FFFFFF;
 text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
 }
-#stackBet .api{
-  background-color: #fff;
+#stackBet .api,#power-stack .api{
+  background-color: #fff !important;
   border-radius: 20px;
 }
-#stackBet h4{
+#stackBet h4,#power-stack h4{
   font-family: 'Avenir Next';
   font-style: normal;
   font-weight: 700;
@@ -911,7 +931,7 @@ line-height: 49px;
 color: #FFFFFF;
 }
 .last{
-  font-family: 'Avenir Next';
+  font-family: 'Avenir' !important;
 font-style: normal;
 font-weight: 500;
 font-size: 24px !important;
@@ -1085,5 +1105,143 @@ text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
   color: #CBCBCB;
    text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
 }
+/********************powerstack**************/
+#stackBet .powerstack-1 {
+  background: url(../images/powerstack.png) !important;
+  background-size: cover !important;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+}
+.powerstack-1 h3{
+  color: #FF9900 !important;
+  text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25) !important;
+}
+.powerstack-1 p{
+  font-family: 'Avenir';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 33px;
+  color: #FFFFFF;
+   text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+#power-stack-tabs .nav-tabs a.active{
+  background-color: transparent !important;
+}
+#power-stack-tabs >.nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active{
+  background-color: transparent !important;
+}
+#power-tab-content p{
+  font-family: 'Avenir';
+font-style: normal;
+font-weight: 500;
+font-size: 24px;
+line-height: 33px;
+color: #FFFFFF;
+text-shadow: 5px 5px 5px rgba(0, 0, 0, 0.25);
+}
+/********************stack7***************/
+.stack7 span{
+  color:  #21EB00 !important;
+}
+.stack7 h3{
+  font-size: 35px;
+}
+.stack7 h1 {
+  font-size: 85px !important;
+  line-height: 141px !important;
+}
+.stack7-buy-ticket{
+  background: linear-gradient(93.19deg, #1AB900 5.18%, #21EB00 97.11%);
+border-radius: 33.0034px;
+font-family: 'Avenir';
+font-style: normal;
+font-weight: 900;
+font-size: 22.0023px;
+line-height: 30px;
+text-align: center;
+width: 175.93px;
+height: 56.87px;
+border: none;
+color: #FFFFFF;
+}
+/*****************my profile***********/
 
+.welcome-page{
+  font-family: 'Avenir Next';
+font-style: normal;
+font-weight: 700;
+font-size: 24px;
+line-height: 33px;
+color: #FFE500;
+text-shadow: 8.88554px 8.88554px 8.88554px rgba(0, 0, 0, 0.25);
+}
+#profile-tabs{
+  background: #00175B;
+border-radius: 20px;
+}
+#profile-tabs>.nav-pills .nav-link.active, .nav-pills .show>.nav-link{
+background: transparent !important;
+color: #499CFE !important;
+text-decoration: underline !important;
+text-underline-offset: 7px;
+}
+#profile-tabs>.nav-pills .nav-link {
+  font-family: 'Avenir' !important;
+font-style: normal;
+font-size: 24px !important;
+line-height: 33px;
+color: #fff;
 
+}
+#profile-tabs label{
+  font-family: 'Mitr-Light';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 31px;
+
+color: #FFFFFF;
+}
+#profile-tabs .form-control{
+  background: transparent;
+  border: 1px solid #fff;
+  border-radius: 20px;
+}
+#profile-tabs input::placeholder{
+  font-family: 'Mitr-Light';
+font-style: normal;
+font-weight: 300;
+font-size: 20px;
+line-height: 31px;
+
+color: #FFFFFF;
+}
+.border-select{
+  border: 1px solid #fff;
+  border-radius: 20px;
+  color: #fff;
+}
+.choose-one{
+  font-family: 'Mitr-Light';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 31px;
+
+color: #FFFFFF;
+}
+.save-btn{
+  background: linear-gradient(94.57deg, #FF7A00 7.42%, #FFA800 96.37%);
+border-radius: 30px;
+font-family: 'Avenir';
+font-style: normal;
+font-weight: 900;
+font-size: 20px;
+line-height: 27px;
+text-align: center;
+border: 0;
+color: #FFFFFF;
+width: 126px;
+height: 51px;
+}
