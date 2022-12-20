@@ -45,7 +45,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <!--<div class="collapse navbar-collapse" id="navbarTogglerDemo01">-->
-                <a class="navbar-brand " href="#"><img src="assets/images/stackBetlogo.png" class="img-fluis"
+                <a class="navbar-brand d-md-block d-none " href="#"><img src="assets/images/stackBetlogo.png" class="img-fluid"
                         alt=""></a>
                 <div class="row my-2 my-lg-0 serach_item d-md-flex d-none">
                     <button class=" my-2 my-sm-0 col-lg-1 col text-lg-left text-center" type="submit">
@@ -269,7 +269,7 @@
             <div class="main-content col-md-10 mb-5 pb-5" id="power-stack">
                 <div class="welcome-page py-5 pl-5">Welcome to your profile page, Max.</div>
                 <div id="profile-tabs" class="mx-lg-5 p-4">
-                    <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
+                    <ul class="nav nav-pills mb-3 ml-lg-4 mt-lg-3" id="pills-tab" role="tablist">
                         <li class="nav-item" role="presentation">
                             <button class="nav-link active" id="pills-profile-tab" data-toggle="pill"
                                 data-target="#pills-profile" type="button" role="tab" aria-controls="pills-home"
@@ -297,9 +297,9 @@
                         </li>
                     </ul>
                     <div class="tab-content" id="pills-tabContent">
-                        <div class="tab-pane fade show active" id="pills-profile" role="tabpanel"
+                        <div class="tab-pane fade show active  mx-lg-4" id="pills-profile" role="tabpanel"
                             aria-labelledby="pills-profile-tab">
-                            <div class="row pt-3">
+                            <div class="row py-lg-4">
                                 <div class="col-lg-3 col-md-6 col-12">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Full Name</label>
@@ -332,33 +332,37 @@
 
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6 col-12 pt-3">
+                                <div class="col-lg-3 col-md-6 col-12 pt-lg-5 pt-3">
                                     <div class="form-group">
                                         <label for="">Password</label>
-                                        <input type="text" class="form-control" id="" aria-describedby="emailHelp"
-                                            placeholder="****************">
-
+                                        <input type="text" class="form-control pass-icon" id=""
+                                            aria-describedby="emailHelp" placeholder="****************">
+                                        <div class="eye-position"><img src="./assets/images/eye.png" class="img-fluid"
+                                                alt=""></div>
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6 col-12 pt-3">
+                                <div class="col-lg-3 col-md-6 col-12 pt-lg-5 pt-3">
                                     <div class="form-group">
                                         <label for="">Confirm Password</label>
                                         <input type="text" class="form-control" id="" aria-describedby="emailHelp"
                                             placeholder="***********">
+                                            <div class="eye-position"><img src="./assets/images/eye.png" class="img-fluid"
+                                                alt=""></div>
 
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6 col-12 mt-3">
+                                <div class="col-lg-3 col-md-6 col-12 pt-lg-5 pt-3">
                                     <div class="form-group">
                                         <label for="">Reset Password</label>
                                         <input type="text" class="form-control" id="" aria-describedby="emailHelp"
                                             placeholder="Enter New Password">
-
+                                            <div class="eye-position"><img src="./assets/images/eye.png" class="img-fluid"
+                                                alt=""></div>
                                     </div>
                                 </div>
                             </div>
-                            <div class="row pt-3">
-                                <div class="col-lg-3 col-md-6 col-12">
+                            <div class="row py-md-4 py-lg-3">
+                                <div class="col-lg-3 col-md-6 col-12 pt-lg-0 pt-3">
                                     <div class="form-group">
                                         <label for="">Street</label>
                                         <input type="text" class="form-control" id="" aria-describedby="emailHelp"
@@ -366,7 +370,7 @@
 
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6 col-12">
+                                <div class="col-lg-3 col-md-6 col-12 pt-lg-0 pt-3">
                                     <div class="form-group">
                                         <label for="">City</label>
                                         <input type="text" class="form-control" id="" aria-describedby="emailHelp"
@@ -374,7 +378,7 @@
 
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6 col-12">
+                                <div class="col-lg-3 col-md-6 col-12 pt-lg-0 pt-3">
                                     <div class="form-group">
                                         <label for="">Country</label>
                                         <input type="text" class="form-control" id="" aria-describedby="emailHelp"
@@ -382,7 +386,7 @@
 
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6 col-12">
+                                <div class="col-lg-3 col-md-6 col-12 ">
                                     <div class="form-group">
                                         <label for="">Postal Code</label>
                                         <input type="text" class="form-control" id="" aria-describedby="emailHelp"
@@ -390,7 +394,7 @@
 
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6 col-12">
+                                <div class="col-lg-3 col-md-6 col-12 pt-lg-5 pt-3">
                                     <div class="form-group">
                                         <label for="">Deposit Limit</label>
                                         <input type="text" class="form-control" id="" aria-describedby="emailHelp"
@@ -398,18 +402,27 @@
 
                                     </div>
                                 </div>
-                                <div class="col-lg-3 col-md-6 col-12 my-auto">
-                                    <div class="form-group d-flex pt-4">
-                                        <label for="">per</label>
-                                        <div class="d-flex border-select">
-                                            <select class="form-control w-50 border-0" id="exampleFormControlSelect1">
+                                <div class="col-lg-3 col-md-6 col-12 my-auto pt-lg-5 pt-3">
+                                    <!-- <div class="form-group">
+                                        <label for="inputState">State</label>
+                                        <select id="inputState" class="form-control">
+                                          <option selected>Choose...</option>
+                                          <option>...</option>
+                                        </select> -->
+                                        
+                                    <div class="form-group pt-4 d-flex">
+                                        <label for="inputState" class="col-3 my-auto">per</label>
+                                        <div class="d-flex pl-2 border-select col-7">
+                                            
+                                            <select class="form-control w-50 border-0" id="inputState">
                                                 <option selected>1</option>
                                                 <option>2</option>
                                                 <option>3</option>
                                                 <option>4</option>
                                                 <option>5</option>
+                                                
                                             </select>
-                                            <div class="days mt-2">days</div>
+                                            <div class="days my-auto ml-1">days</div>
                                         </div>
                                     </div>
                                 </div>
@@ -418,7 +431,7 @@
                                 <div class="choose-one">Choose how you would like us to contact you, including exclusive
                                     promotions:</div>
                                 <!-- Group of default radios - option 1 -->
-                                <div class="row ml-2 mt-3">
+                                <div class="row ml-2 my-5">
                                     <div class="custom-control custom-radio">
                                         <input type="radio" class="custom-control-input" id="defaultGroupExample1"
                                             name="groupOfDefaultRadios">
@@ -426,14 +439,14 @@
                                     </div>
 
                                     <!-- Group of default radios - option 2 -->
-                                    <div class="custom-control custom-radio ml-4">
+                                    <div class="custom-control custom-radio ml-5">
                                         <input type="radio" class="custom-control-input" id="defaultGroupExample2"
                                             name="groupOfDefaultRadios" checked>
                                         <label class="custom-control-label" for="defaultGroupExample2">SMS</label>
                                     </div>
 
                                     <!-- Group of default radios - option 3 -->
-                                    <div class="custom-control custom-radio ml-4">
+                                    <div class="custom-control custom-radio ml-5">
                                         <input type="radio" class="custom-control-input" id="defaultGroupExample3"
                                             name="groupOfDefaultRadios">
                                         <label class="custom-control-label" for="defaultGroupExample3">Phone</label>
@@ -542,21 +555,22 @@
                                 <div class="mx-1"><span class="line-orange-text  p-2">£50</span></div>
                                 <div class="mx-1"><span class="line-orange-text  p-2">£100</span></div>
                             </div>
-                            <div class="mt-4"><input type="text" placeholder="Amount to deposit" class="form-control"></div>
+                            <div class="mt-4"><input type="text" placeholder="Amount to deposit" class="form-control">
+                            </div>
                             <div class="mt-4"><button class="deposite-btn">Deposit</button></div>
                         </div>
                         <!--------------end of deposite-->
                         <div class="tab-pane fade mb-md-5 pb-md-5" id="pills-Documents" role="tabpanel"
                             aria-labelledby="pills-Documents-tab">
                             <h1 class="depo-amount ml-1">Driver’s License Or Passport</h1>
-                           
+
                             <div class="mt-4">
                                 <form action="/action_page.php">
                                     <input type="file" id="myFile" name="filename">
                                     <input type="text" placeholder="Amount to deposit" class="form-control">
-                                  </form>
-                               </div>
-                            
+                                </form>
+                            </div>
+
                         </div>
                         <!--------------end of document-->
                     </div>

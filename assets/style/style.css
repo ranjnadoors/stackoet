@@ -450,7 +450,7 @@ height: 100%;
 .enter-now {
   background-image: url(../images/power_stack.svg);
   background-repeat: no-repeat;
-  object-fit: cover;
+  background-size: cover;
   border-radius: 20px;
   position: relative;
 }
@@ -554,12 +554,12 @@ height: 100%;
 }
 
 #rewards h4 {
-  font-family: 'Avenir';
+  font-family: 'Avenir' !important;
   font-style: normal;
-  font-weight: 900;
-  font-size: 18px;
-  line-height: 25px;
-  color: #00FFFF;
+  font-weight: 900 !important;
+  font-size: 18px !important;
+  line-height: 25px !important;
+  color: #00FFFF !important;
 }
 
 #rewards .span1 {
@@ -913,8 +913,11 @@ hr {
   }
 
   #fixed-side {
+    max-height: 100%;
     height: auto;
-    overflow: hidden;
+    overflow: scroll;
+    margin-top: 3%;
+    z-index: 99;
   }
 
   #stackBet h1 {
@@ -948,8 +951,8 @@ hr {
   }
 
   #fixed-side {
-    height: auto;
-    overflow: hidden;
+    height: 100%;
+    overflow: scroll;
   }
 
   #stackBet h1 {
@@ -992,7 +995,7 @@ hr {
     overflow: scroll;
     left: 0;
 
-    top: 7%;
+    top: 13%;
     height: 100%;
 
   }
@@ -1040,6 +1043,9 @@ hr {
   #stackBet h4 {
     font-size: 65px;
     line-height: 66px;
+  }
+  #fixed-side{
+    top: 9%;
   }
 }
 
@@ -1326,6 +1332,8 @@ tbody {
 /********************stack7***************/
 .stack7 span {
   color: #21EB00 !important;
+  font-family: 'Avenir Next';
+  font-weight: 900;
 }
 
 .stack7 h3 {
@@ -1334,9 +1342,12 @@ tbody {
 
 .stack7 h1 {
   font-size: 85px !important;
-  line-height: 141px !important;
+  line-height: 87px !important;
 }
-
+.stack7 h3 {
+  font-size: 35px !important;
+  line-height: 38px !important;
+}
 .stack7-buy-ticket {
   background: linear-gradient(93.19deg, #1AB900 5.18%, #21EB00 97.11%);
   border-radius: 33.0034px;
@@ -1384,7 +1395,7 @@ tbody {
   font-size: 24px !important;
   line-height: 33px;
   color: #fff;
-
+font-weight: 900;
 }
 
 #profile-tabs label {
@@ -1401,13 +1412,14 @@ tbody {
   background: transparent;
   border: 1px solid #fff;
   border-radius: 20px;
+ height: 51px;
 }
 
-#profile-tabs input::placeholder {
+#profile-tabs input::placeholder,#profile-tabs input {
   font-family: 'Mitr-Light';
   font-style: normal;
   font-weight: 300;
-  font-size: 20px;
+  font-size: 18px;
   line-height: 31px;
 
   color: #FFFFFF;
@@ -1569,4 +1581,35 @@ border-radius: 30px;
 }
 #pills-Deposit input{
   width: 281px;
+}
+
+.pass-icon {
+  padding-right: 25px;
+  background: url("/assets/images/eye.png") no-repeat right;
+  background-size: 20px;
+}
+.eye-position{
+  position: absolute;
+    right: 5%;
+    top: 56%;
+}
+.form-group{
+  position: relative;
+}
+/**************radion-btn***************/
+.custom-control-label::before{
+  background-color: transparent !important; 
+    border: 2px solid #adb5bd !important;
+}
+#exampleFormControlSelect1{
+  background-color: #001234 !important;
+  color: #fff !important;
+}
+.days{
+  color: #fff;
+  font-family: 'Mitr-Light';
+}
+option{
+  background-color: #00175B;
+  color: #fff;
 }
