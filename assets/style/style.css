@@ -841,7 +841,12 @@ hr {
   border-radius: 20px;
   background-repeat: no-repeat;
 }
-
+#stackBet .stack7 {
+  background: url(../images/stack7-bg.png) !important;
+  background-size: cover !important;
+  border-radius: 20px;
+  background-repeat: no-repeat;
+}
 #stackBet h1 {
   font-family: 'Avenir Next';
   font-style: normal;
@@ -1330,10 +1335,11 @@ tbody {
 }
 
 /********************stack7***************/
-.stack7 span {
-  color: #21EB00 !important;
+.stack7 span1 {
+  color: #ADFF00 !important;
   font-family: 'Avenir Next';
   font-weight: 900;
+  font-size: 112px;
 }
 
 .stack7 h3 {
