@@ -1619,3 +1619,144 @@ option{
   background-color: #00175B;
   color: #fff;
 }
+/***********************classic***************/
+#classic-bg{
+  background: #00175B;
+  border-radius: 20px;
+ height: 100%;
+
+}
+.pick-luck-bg{
+  background-color: #fff;
+  border-radius: 10px;
+}
+.pick{
+  font-family: 'Mitr-Medium';
+font-style: normal;
+font-weight: 400;
+font-size: 16px;
+line-height: 25px;
+text-align: center;
+
+color: #000000;
+}
+.pick-number{
+  background-color: #E7E7E7;
+}
+.number{
+  font-family: 'Mitr-Medium';
+font-style: normal;
+font-weight: 400;
+font-size: 17.8361px;
+line-height: 28px;
+text-align: center;
+background: #FFFFFF;
+border: 1px solid rgba(0, 17, 168, 0.7);
+border-radius: 2.78689px;
+color: #000000;
+width: 34px;
+height: 34px;
+}
+.bg-blue{
+background-color: #05C0FB;
+}
+.orange-bg{
+  background: #FB9905
+}
+.chosse-bonus{
+  background-color: #002B7C;
+}
+.bonus-number{
+  font-family: 'Mitr-Medium';
+font-style: normal;
+font-weight: 400;
+font-size: 14px;
+line-height: 22px;
+text-align: center;
+
+color: #FFFFFF;
+}
+.buttons{
+  background: linear-gradient(94.57deg, #FF7A00 7.42%, #FFA800 96.37%);
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.auto{
+  border: 0;
+  font-family: 'Mitr-Medium';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 19px;
+/* identical to box height */
+background-color: transparent;
+
+color: #FFFFFF;
+}
+.pick-luck-bg{
+  width: 210px;
+}
+.add-line{
+  font-family: 'Avenir';
+font-style: normal;
+font-weight: 900;
+font-size: 20px;
+line-height: 27px;
+text-align: center;
+border: 0;
+width: 231px;
+height: 51px;
+background: linear-gradient(93.19deg, #1AB900 5.18%, #21EB00 97.11%);
+border-radius: 30px;
+color: #FFFFFF;
+}
+.randomize{
+  background: linear-gradient(93.19deg, #FDD65B 5.18%, #B99000 97.11%) !important;
+  border-radius: 30px;
+}
+.clear-line{
+  background: linear-gradient(93.19deg, #FD5B5B 5.18%, #FF2E00 97.11%) !important;
+  border-radius: 30px;
+}
+#classic label{
+  font-family: 'Mitr-Light';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 31px;
+
+color: #FFFFFF;
+}
+#classic input{
+  background: #00175B;
+  border-radius: 20px;
+  border: 1px solid #fff;
+}
+#select-date{
+  background-color: transparent !important;
+  border: 1px solid white;
+  border-radius: 20px;
+}
+.amount-number{
+  font-family: 'Mitr-Medium';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 31px;
+
+color: #FFFFFF;
+}
+.add-cart{
+  font-family: 'Avenir Next';
+font-style: normal;
+font-weight: 900;
+font-size: 20px;
+line-height: 27px;
+text-align: center;
+border: 0;
+color: #FFFFFF;
+background: linear-gradient(94.57deg, #FF7A00 7.42%, #FFA800 96.37%);
+border-radius: 30px;
+width: 158px;
+height: 51px
+}
